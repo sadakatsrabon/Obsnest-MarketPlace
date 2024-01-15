@@ -1,9 +1,8 @@
 
-
 const HomeMain = () => {
     return (
         <div>
-            <h2>Obsnest Market Home Page-Main By SadakatHossainSrabon</h2>
+            <h2 className="text-3xl">Obsnest Market Home Page-Main By SadakatHossainSrabon</h2>
         </div>
     );
 };
