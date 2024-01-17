@@ -8,7 +8,7 @@ body {
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
   color: #000;
   margin: 0;
   padding: 0;
@@ -32,12 +32,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  /* font-size: 22px;
+  font-weight: bold; */
+  color: #000000;
 }
 
-.swiper-slide:nth-child(1n) {
+/* .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
 }
 
@@ -75,4 +75,4 @@ body {
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-}
+} */

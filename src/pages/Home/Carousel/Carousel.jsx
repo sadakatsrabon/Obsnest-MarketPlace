@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Carousel = () => {
     return (
         <div className="md:flex flex-row-reverse justify-around my-10">
-            <div className="w-full">
+            <div className="">
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
