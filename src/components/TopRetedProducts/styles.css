@@ -23,7 +23,7 @@ body {
 }
 
 .swiper {
-  margin: 100px auto;
+  /* margin: 100px auto; */
   width: 320px;
   height: 240px;
 }
