@@ -14,78 +14,80 @@ import img from "../../../assets/img.jpg"
 
 const Carousel = () => {
     return (
-        <div className='w-full h-96'>
-            <>
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className=''>
-                            <p>Carousel</p>
-                            <img src={img} alt="" />
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </>
+        <div>
+            <div className='w-full h-96'>
+                <>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=''>
+                                <p>Carousel</p>
+                                <img src={img} alt="" />
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </>
+            </div>
         </div>
     );
 };
