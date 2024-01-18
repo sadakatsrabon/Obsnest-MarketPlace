@@ -20,7 +20,7 @@ const TopRetedProdects = () => {
                     },
                 }}
                 modules={[EffectCreative]}
-                className="mySwiper"
+                // className="mySwiper"
             >
                 <SwiperSlide>Item Category -1</SwiperSlide>
                 <SwiperSlide>Item Category -2</SwiperSlide>

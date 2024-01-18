@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import './styles.css';
+import './styles.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -14,7 +14,7 @@ import img from "../../../assets/img.jpg"
 
 const Carousel = () => {
     return (
-        <div className="md:flex flex-row-reverse justify-around my-10">
+        <div className="md:flex flex-row-reverse justify-around m-0 my-10 p-0 w-96">
             <div className="">
                 <Swiper
                     spaceBetween={30}
@@ -32,7 +32,7 @@ const Carousel = () => {
                 >
                     <SwiperSlide>
                         <div>
-                            <img src={img} alt="" />
+                            <img className="" src={img} alt="" />
                             <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
@@ -86,7 +86,9 @@ const Carousel = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            <TopRetedProdects></TopRetedProdects>
+            <div>
+                <TopRetedProdects></TopRetedProdects>
+            </div>
         </div>
     );
 };
