@@ -1,8 +1,8 @@
-import TopRetedProdects from "../../../components/TopRetedProducts/TopRetedProdects";
+// import TopRetedProdects from "../../../components/TopRetedProducts/TopRetedProdects";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css';
+// import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
 
@@ -14,8 +14,8 @@ import img from "../../../assets/img.jpg"
 
 const Carousel = () => {
     return (
-        <div className="md:flex m-0 my-10 p-0 w-96">
-            <div className="">
+        <div className='w-full h-96'>
+            <>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -31,64 +31,61 @@ const Carousel = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div>
-                            <img className="" src={img} alt="" />
-                            <h2>carousel</h2>
+                        <div className=''>
+                            <p>Carousel</p>
+                            <img src={img} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div>
+                        <div className=''>
+                            <p>Carousel</p>
                             <img src={img} alt="" />
-                            <h2>carousel</h2>
                         </div>
                     </SwiperSlide>
                 </Swiper>
-            </div>
-            <div>
-                <TopRetedProdects></TopRetedProdects>
-            </div>
+            </>
         </div>
     );
 };
