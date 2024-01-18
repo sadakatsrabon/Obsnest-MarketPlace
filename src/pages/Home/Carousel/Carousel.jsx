@@ -14,8 +14,8 @@ import img from "../../../assets/img.jpg"
 
 const Carousel = () => {
     return (
-        <div>
-            <div className='w-full h-96'>
+        <div className=''>
+            <div className='w-full h-[500px]'>
                 <>
                     <Swiper
                         spaceBetween={30}

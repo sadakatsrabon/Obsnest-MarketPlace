@@ -3,8 +3,10 @@ import LetestProduct from "../LetextProduct/LetestProduct";
 
 const HomeMain = () => {
     return (
-        <div className="mx-auto text-center">
-            <Carousel></Carousel>
+        <div className="text-center">
+            <div className="bg-fixed top-0">
+                <Carousel></Carousel>
+            </div>
             <LetestProduct></LetestProduct>
             <h2 className="text-3xl">Obsnest Market Home Page-Main By SadakatHossainSrabon</h2>
         </div>
