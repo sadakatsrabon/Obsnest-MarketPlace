@@ -14,7 +14,7 @@ import img from "../../../assets/img.jpg"
 
 const Carousel = () => {
     return (
-        <div className="md:flex flex-row-reverse justify-around m-0 my-10 p-0 w-96">
+        <div className="md:flex m-0 my-10 p-0 w-96">
             <div className="">
                 <Swiper
                     spaceBetween={30}
