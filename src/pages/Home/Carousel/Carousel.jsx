@@ -1,12 +1,10 @@
-// import TopRetedProdects from "../../../components/TopRetedProducts/TopRetedProdects";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import 'swiper/css/pagination';
+import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import img from "../../../assets/img.jpg"
@@ -33,55 +31,46 @@ const Carousel = () => {
                     >
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <p>Carousel</p>
                                 <img src={img} alt="" />
                             </div>
                         </SwiperSlide>
