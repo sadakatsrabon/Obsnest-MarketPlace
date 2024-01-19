@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Product Name 1",
+        "category": "Category 1",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "id": 2,
+        "name": "Product Name 2",
+        "category": "Category 2",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "id": 3,
+        "name": "Product Name 3",
+        "category": "Category 1",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    }
+]
