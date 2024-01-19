@@ -6,7 +6,7 @@ const HomeMain = () => {
             <div className="sm:w-3/4">
                 <Carousel></Carousel>
             </div>
-            <div className="h-96 carousel carousel-vertical rounded-box">
+            <div className="h-96 carousel-vertical rounded-box m-auto">
                 <div className="carousel-item h-full">
                     <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" />
                 </div>
