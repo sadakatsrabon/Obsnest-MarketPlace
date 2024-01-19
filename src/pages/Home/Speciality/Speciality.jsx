@@ -1,11 +1,7 @@
-import Carousel from "../Carousel/Carousel";
 
-const HomeMain = () => {
+const Speciality = () => {
     return (
-        <div className="sm:flex mt-0">
-            <div className="sm:w-3/4">
-                <Carousel></Carousel>
-            </div>
+        <div>
             <div className="h-96 carousel carousel-vertical rounded-box">
                 <div className="carousel-item h-full">
                     <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" />
@@ -33,4 +29,4 @@ const HomeMain = () => {
     );
 };
 
-export default HomeMain;
+export default Speciality;
