@@ -4,7 +4,7 @@ import LetestProduct from "../LetextProduct/LetestProduct";
 const HomeMain = () => {
     return (
         <div className="text-center">
-            <div className="bg-fixed top-0">
+            <div className="">
                 <Carousel></Carousel>
             </div>
             <LetestProduct></LetestProduct>

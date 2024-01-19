@@ -3,7 +3,7 @@
 const NavMenu = () => {
     return (
         <div className="">
-            <div className="navbar fixed z-10 opacity-30 w-[100%] bg-base-100">
+            <div className="navbar w-[100%] bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,20 +26,17 @@ const NavMenu = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><a>Order</a></li>
-                        <li>
-                            <details>
-                                <summary>Order review</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Order Review</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Log Out</a>
+                <div className="navbar">
+                    <li>
+                        <a>Order Review</a>
+                        <ul className="p-2">
+                            <li><a>Login</a></li>
+                            <li><a>LogOut</a></li>
+                        </ul>
+                    </li>
                 </div>
             </div>
         </div>
