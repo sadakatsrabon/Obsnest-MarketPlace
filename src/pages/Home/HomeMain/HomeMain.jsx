@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Category from "../../../components/Category/Category";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-import Carousel from "../../../components/Carousel/Carousel";
-import SideSwiper from "../../../components/SiceSwiper/SideSwiper";
+import Carousel from "../Carousel/Carousel";
+import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 
 const HomeMain = () => {
 
