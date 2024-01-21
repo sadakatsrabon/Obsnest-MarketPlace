@@ -1,13 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Category from "../../../components/Category/Category";
 import Carousel from "../Carousel/Carousel";
 
 const HomeMain = () => {
- useEffect(() => {
-    fetch('productsData.json')
-    .then(res => res.json())
-    .then(data => console.log(data))
- }, [])
+
+    const [productsData, setData] = useState([])
+
+    useEffect(() => {
+        fetch('productsData.json')
+            .then(res => res.json())
+            .then(data => {
+                setData(data)
+                console.log(productsData)
+            })
+    }, [])
     return (
         <div>
             <div className="sm:flex mt-0">

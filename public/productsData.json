@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Product Name 1",
-        "category": "Category 1",
+        "name": "S Smart Phone",
+        "category": "smart_collection",
         "img": "https://example.com/image1.jpg",
         "price": 9.99,
         "description": "Description of Product 1",
@@ -11,8 +11,8 @@
     },
     {
         "id": 2,
-        "name": "Product Name 2",
-        "category": "Category 2",
+        "name": "Samsung S10",
+        "category": "smart_collection",
         "img": "https://example.com/image2.jpg",
         "price": 14.50,
         "description": "Description of Product 2",
@@ -21,12 +21,133 @@
     },
     {
         "id": 3,
-        "name": "Product Name 3",
-        "category": "Category 1",
+        "name": "Apple 3",
+        "category": "smart_collection",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "id": 4,
+        "name": "S Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "id": 5,
+        "name": "Walton Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "id": 6,
+        "name": "Lg Refreterator",
+        "category": "electronic",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "id": 7,
+        "name": "T-Shirt",
+        "category": "fashion_beauti",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "id": 8,
+        "name": "Shirt",
+        "category": "fashion_beauti",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "id": 9,
+        "name": "Pant",
+        "category": "fashion_beauti",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "id": 10,
+        "name": "Chair",
+        "category": "home-applience",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "id": 12,
+        "name": "Table",
+        "category": "home-applience",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "id": 13,
+        "name": "Bed",
+        "category": "home-applience",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "id": 14,
+        "name": "Coocker",
+        "category": "kithen",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "id": 15,
+        "name": "Rice Cooker",
+        "category": "kithen",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "id": 16,
+        "name": "jar",
+        "category": "kithen",
         "img": "https://example.com/image3.jpg",
         "price": 25.99,
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green"
     }
+    
 ]
