@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 
 const NavMenu = () => {
-    const navOptions = <>
+    const navOptions = 
+    <>
 
         <li><Link to="/menu"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Food Menu</button></Link></li>
 
@@ -26,7 +27,7 @@ const NavMenu = () => {
         </>
     </>
     return (
-        <div className="navbar h-1 fixed md:relative z-10 max-w-screen-xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
+        <div className="navbar h-1 fixed z-10 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
