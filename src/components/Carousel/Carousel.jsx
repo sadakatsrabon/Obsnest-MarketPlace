@@ -7,7 +7,7 @@ import './styles.css';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import img from "../../../assets/img.jpg"
+import img from "../../assets/img.jpg"
 
 
 const Carousel = () => {
