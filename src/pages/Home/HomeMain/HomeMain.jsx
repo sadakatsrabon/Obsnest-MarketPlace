@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Category from "../../../components/Category/Category";
 import Carousel from "../Carousel/Carousel";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const HomeMain = () => {
 
@@ -44,7 +45,11 @@ const HomeMain = () => {
                     </div>
                 </div>
             </div>
-            {/* Categor */}
+            {/* Category */}
+            <SectionTitle
+            subHeadin={"Special Category By OBSNEST Market"}
+            heading={"Category"}
+            ></SectionTitle>
             <Category></Category>
         </div>
     );
