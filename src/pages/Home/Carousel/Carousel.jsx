@@ -13,7 +13,7 @@ import img from "../../../assets/img.jpg"
 const Carousel = () => {
     return (
         <div className=''>
-            <div className='w-full h-[500px]'>
+            <div className=''>
                 <>
                     <Swiper
                         spaceBetween={30}
@@ -31,47 +31,47 @@ const Carousel = () => {
                     >
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className=''>
-                                <img src={img} alt="" />
+                                <img className='max-w-fit' src={img} alt="" />
                             </div>
                         </SwiperSlide>
                     </Swiper>
