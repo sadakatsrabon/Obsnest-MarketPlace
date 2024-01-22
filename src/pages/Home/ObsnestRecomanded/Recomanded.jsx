@@ -1,8 +1,12 @@
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Recomanded = () => {
     return (
         <div>
-            Obsnest will remcomand the best products for customers
+            <SectionTitle></SectionTitle>
+           <div>
+
+           </div>
         </div>
     );
 };
