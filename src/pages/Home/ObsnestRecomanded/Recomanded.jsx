@@ -3,7 +3,10 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 const Recomanded = () => {
     return (
         <div>
-            <SectionTitle></SectionTitle>
+            <SectionTitle
+            heading={"Obsnest recomanded"}
+            subHeadin={"Obsenst choice"}
+            ></SectionTitle>
            <div>
 
            </div>
