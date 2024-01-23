@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Category from "../../../components/Category/Category";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
@@ -29,7 +28,7 @@ const HomeMain = () => {
                 subHeadin={"Special Category By OBSNEST Market"}
                 heading={"Category"}
             ></SectionTitle>
-            <Category></Category>
+            {/* <Category></Category> */}
         </div>
     );
 };
