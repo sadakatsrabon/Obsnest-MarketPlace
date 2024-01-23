@@ -3,7 +3,6 @@ import Category from "../../../components/Category/Category";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
-import Recomanded from "../ObsnestRecomanded/Recomanded";
 
 const HomeMain = () => {
 
@@ -31,7 +30,6 @@ const HomeMain = () => {
                 heading={"Category"}
             ></SectionTitle>
             <Category></Category>
-            <Recomanded></Recomanded>
         </div>
     );
 };
