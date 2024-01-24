@@ -5,16 +5,16 @@ import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 
 const HomeMain = () => {
 
-    const [productsData, setData] = useState([])
+    // const [productsData, setData] = useState([])
 
-    useEffect(() => {
-        fetch('productsData.json')
-            .then(res => res.json())
-            .then(data => {
-                setData(data)
-                // console.log(productsData)
-            })
-    }, [productsData])
+    // useEffect(() => {
+    //     fetch('productsData.json')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setData(data)
+    //             console.log(productsData)
+    //         })
+    // }, [productsData])
     return (
         <div className="pt-14" >
             <div className="sm:flex mx-auto">
