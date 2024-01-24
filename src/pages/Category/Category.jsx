@@ -15,9 +15,16 @@ const Category = () => {
             })
     }, [])
     return (
-        <div>
-            <h2>{smart_collection.name}</h2>
-            <h2 className="pt-20">Here will show our Obsnest category</h2>
+        <div className="pt-48">
+            {
+                smart_collection.map((item) => 
+                    <div key={item._id}>
+                        <h2>{item.name}</h2>
+                    </div>
+                )
+            }
+            <h2 className="">Here will show our Obsnest category</h2>
+            <h2 className="">{smart_collection.name}</h2>
         </div>
     );
 };
