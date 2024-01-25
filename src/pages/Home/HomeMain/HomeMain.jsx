@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
