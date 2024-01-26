@@ -1,9 +1,10 @@
+import CategoryCart from "./CategoryCart";
 
 
 const Category = () => {
     return (
         <div>
-            <h2>Here will show category slider.</h2>
+            <CategoryCart></CategoryCart>
         </div>
     );
 };
