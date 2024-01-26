@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CarouselCard = () => {
+const CategoryCart = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const CarouselCard = () => {
     );
 };
 
-export default CarouselCard;
+export default CategoryCart;
