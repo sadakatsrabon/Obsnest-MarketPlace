@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+
 import React, { useEffect, useState } from 'react';
 
 const CategoryMenu = () => {
@@ -6,12 +6,12 @@ const CategoryMenu = () => {
     const [loadedData, setLoadedData] = useState([]);
     useEffect(() => {
         fetch('productsData.json')
-        .then(res => res.json())
-        .then(data => {
-            setLoadedData(data)
-            console.log(data)
-        })
+            .then(res => res.json())
+            .then(data => {
+                setLoadedData(data)
+            })
     }, [])
+    console.log(loadedData)
     return (
         <div>
 
