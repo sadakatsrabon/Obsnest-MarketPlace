@@ -6,10 +6,11 @@ const CategoryMenu = () => {
     const [loadedData, setLoadedData] = useState([]);
     useEffect(() => {
         fetch('productsData.json')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-            })
+        .then(res => res.json())
+        .then(data => {
+            setLoadedData(data)
+            console.log(data)
+        })
     }, [])
     return (
         <div>
