@@ -14,7 +14,7 @@ const CategoryMenu = () => {
     console.log(loadedData)
     return (
         <div>
-
+            
         </div>
     );
 };
