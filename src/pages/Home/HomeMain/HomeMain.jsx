@@ -6,9 +6,6 @@ import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 import Category from "../Category/Category";
 
 const HomeMain = () => {
-    <Helmet>
-        Onsnest || Home
-    </Helmet>
 
     // const [productsData, setData] = useState([])
 
@@ -22,6 +19,9 @@ const HomeMain = () => {
     // }, [productsData])
     return (
         <div className="pt-14" >
+            <Helmet>
+                <title>Onsnest || Home</title>
+            </Helmet>
             <div className="sm:flex mx-auto">
                 <div className="sm:w-[75%]">
                     <Carousel></Carousel>

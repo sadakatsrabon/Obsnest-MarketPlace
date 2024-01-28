@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const CategoryMenu = () => {
 
@@ -14,7 +15,9 @@ const CategoryMenu = () => {
     console.log(loadedData)
     return (
         <div>
-            
+            <Helmet>
+                <title>Obsnet Category</title>
+            </Helmet>
         </div>
     );
 };
