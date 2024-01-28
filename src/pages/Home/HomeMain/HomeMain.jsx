@@ -1,10 +1,14 @@
 // import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 import Category from "../Category/Category";
 
 const HomeMain = () => {
+    <Helmet>
+        Onsnest || Home
+    </Helmet>
 
     // const [productsData, setData] = useState([])
 
