@@ -1,5 +1,6 @@
 
-const CategoryCart = () => {
+const CategoryCart = ({mobile}) => {
+    console.log(mobile)
     return (
         <div>
             <div className="carousel carousel-center p-4 space-x-4 rounded-box">
