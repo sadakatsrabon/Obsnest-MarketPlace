@@ -8,8 +8,8 @@ const Category = () => {
     const [loadedData, setLoadedData] = useState([]);
 
 
-    const mobile = loadedData.filter(item => item.category === 'phone')
-    console.log(mobile)
+    const phone = loadedData.filter(item => item.category === 'phone')
+    console.log(phone)
     // console.log(loadedData);
 
 
@@ -24,7 +24,8 @@ const Category = () => {
     return (
         <div>
             <CategoryCart
-            item = {mobile}
+                items={phone}
+                title = "Title"
             ></CategoryCart>
         </div>
     );
