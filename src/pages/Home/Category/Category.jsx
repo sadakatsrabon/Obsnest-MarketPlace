@@ -25,7 +25,7 @@ const Category = () => {
         <div>
             <CategoryCart
                 items={phone}
-                title = "Title"
+                title = "Phone"
             ></CategoryCart>
         </div>
     );
