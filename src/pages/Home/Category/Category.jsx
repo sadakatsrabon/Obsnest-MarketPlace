@@ -6,12 +6,13 @@ import { useEffect } from "react";
 
 const Category = () => {
     const [loadedData, setLoadedData] = useState([]);
+
+
+    const mobile = loadedData.filter(items => items.category === 'phone')
+    console.log(mobile)
     // console.log(loadedData);
 
 
-    const mobile = loadedData.filter(mobile === 'mobile')
-    console.log(mobile)
-    
     useEffect(() => {
         fetch('productsData.json')
             .then(res => res.json())
@@ -19,6 +20,7 @@ const Category = () => {
                 setLoadedData(data);
             })
     }, [])
+
     return (
         <div>
             <CategoryCart></CategoryCart>
