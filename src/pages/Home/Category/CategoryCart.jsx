@@ -1,9 +1,9 @@
 
-const CategoryCart = ({items, title}) => {
+const CategoryCart = ({ items, title }) => {
     console.log(items, title)
     return (
         <div>
-            <div className="carousel carousel-center p-4 space-x-4 rounded-box">
+            <div className="carousel carousel-center max-w-full p-4 space-x-4 rounded-box">
                 {/* Cart */}
                 <div className="carousel-item w-96 h-72 card bg-base-100 shadow-xl image-full">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
