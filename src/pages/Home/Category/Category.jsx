@@ -24,8 +24,9 @@ const Category = () => {
     return (
         <div>
             <CategoryCart
+                key={phone._id}
                 items={phone}
-                title = "Phone"
+                title="Phone"
             ></CategoryCart>
         </div>
     );
