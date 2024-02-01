@@ -9,7 +9,7 @@ const CategoryCart = ({ key, items, title }) => {
                         <div
                             key={key}
                             className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full"
-                        ><h2 className="text-7xl">{item.name}</h2></div>
+                        ><h2 className="text-7xl">{item}</h2></div>
                         console.log(item.name)
                     })
                 }
@@ -24,7 +24,7 @@ const CategoryCart = ({ key, items, title }) => {
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
