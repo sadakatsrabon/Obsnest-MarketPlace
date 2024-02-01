@@ -4,21 +4,14 @@ const CategoryCart = ({ key, items, title }) => {
     return (
         <div>
             {
-                // items.map((item) => {
-                //     return (
-                //         <div
-                //             key={key}
-                //             className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full"
-                //         ><h2 className="text-7xl">anything</h2></div>
-                //         // console.log(item.name)
-                //     )
-                // })
                 items.map((item) => {
-                    return ( // Add return here
-                        <div key={key} className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full">
-                            <h2 className="text-7xl">{item.name}</h2>
-                        </div>
-                    );
+                    return (
+                        <div 
+                        key={key} 
+                        className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full"
+                        ><h2 className="text-7xl">anything</h2></div>
+                        // console.log(item.name)
+                    )
                 })
             }
 
