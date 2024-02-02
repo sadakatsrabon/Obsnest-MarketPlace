@@ -3,6 +3,11 @@ const CategoryCart = ({ items }) => {
     console.log(items)
 
     const phone = items.filter(item => item.category === 'phone')
+    const electronic = items.filter(item => item.category === 'electronic')
+    const fashion_beauti = items.filter(item => item.category === 'fashion_beauti')
+    const home_applience = items.filter(item => item.category === 'home_applience')
+    const kitchen = items.filter(item => item.category === 'kitchen')
+    // console.log(phone)
 
     return (
         <div>

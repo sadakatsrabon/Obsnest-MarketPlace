@@ -92,7 +92,7 @@
     {
         "_id": 10,
         "name": "Chair",
-        "category": "home-applience",
+        "category": "home_applience",
         "img": "https://example.com/image1.jpg",
         "price": 9.99,
         "description": "Description of Product 1",
@@ -102,7 +102,7 @@
     {
         "_id": 12,
         "name": "Table",
-        "category": "home-applience",
+        "category": "home_applience",
         "img": "https://example.com/image2.jpg",
         "price": 14.50,
         "description": "Description of Product 2",
@@ -112,7 +112,7 @@
     {
         "_id": 13,
         "name": "Bed",
-        "category": "home-applience",
+        "category": "home_applience",
         "img": "https://example.com/image3.jpg",
         "price": 25.99,
         "description": "Description of Product 3",
@@ -122,7 +122,7 @@
     {
         "_id": 14,
         "name": "Coocker",
-        "category": "kithen",
+        "category": "kitchen",
         "img": "https://example.com/image1.jpg",
         "price": 9.99,
         "description": "Description of Product 1",
@@ -132,7 +132,7 @@
     {
         "_id": 15,
         "name": "Rice Cooker",
-        "category": "kithen",
+        "category": "kitchen",
         "img": "https://example.com/image2.jpg",
         "price": 14.50,
         "description": "Description of Product 2",
@@ -142,12 +142,11 @@
     {
         "_id": 16,
         "name": "jar",
-        "category": "kithen",
+        "category": "kitchen",
         "img": "https://example.com/image3.jpg",
         "price": 25.99,
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green"
     }
-    
 ]
