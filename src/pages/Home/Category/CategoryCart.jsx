@@ -1,6 +1,6 @@
 
-const CategoryCart = ({ loadedData }) => {
-    console.log(loadedData)
+const CategoryCart = ({ items }) => {
+    console.log(items)
     return (
         <div>
             {/* {
