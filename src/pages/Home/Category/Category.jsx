@@ -1,6 +1,4 @@
-import { useState } from "react";
 import CategoryCart from "./CategoryCart";
-import { useEffect } from "react";
 
 
 
