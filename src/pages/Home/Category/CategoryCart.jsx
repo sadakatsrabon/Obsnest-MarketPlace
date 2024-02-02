@@ -1,6 +1,9 @@
 
 const CategoryCart = ({ items }) => {
     console.log(items)
+
+    const phone = items.filter(item => item.category === 'phone')
+
     return (
         <div>
             {/* {

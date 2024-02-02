@@ -7,6 +7,9 @@ import { useEffect } from "react";
 const Category = () => {
     const [loadedData, setLoadedData] = useState([]);
 
+    // const phone = loadedData.filter(item => item.category === 'phone')
+    // console.log(phone)
+
     // console.log(loadedData);
 
 
