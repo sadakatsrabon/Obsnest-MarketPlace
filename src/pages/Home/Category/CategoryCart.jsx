@@ -1,5 +1,9 @@
 import s_phone from '../../../assets/phone.jpg'
+import electronicImg from '../../../assets/electronic.jpg'
 import fashion from '../../../assets/fashion.jpg'
+import plasticImg from '../../../assets/plastic.png'
+import kitchenImg from '../../../assets/kitchen.jpg'
+
 
 const CategoryCart = ({ items }) => {
 
@@ -36,7 +40,7 @@ const CategoryCart = ({ items }) => {
             </div>
             {/* cart - 3 */}
             <div className="h-72 px-2 py-4 card bg-base-100 shadow-xl image-full">
-                <figure> <img src={fashion} alt="Fashion" /> </figure>
+                <figure> <img src={electronicImg} alt="Fashion" /> </figure>
                 <div className="card-body">
                     <h2 className="card-title">{'Fashoion and Buauti'}!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -47,7 +51,7 @@ const CategoryCart = ({ items }) => {
             </div>
             {/* cart -4 */}
             <div className="h-72 px-2 py-4 card bg-base-100 shadow-xl image-full">
-                <figure> <img src={fashion} alt="Fashion" /> </figure>
+                <figure> <img src={plasticImg} alt="Fashion" /> </figure>
                 <div className="card-body">
                     <h2 className="card-title">{'Fashoion and Buauti'}!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -58,7 +62,7 @@ const CategoryCart = ({ items }) => {
             </div>
             {/* cart-5 */}
             <div className="h-72 px-2 py-4 card bg-base-100 shadow-xl image-full">
-                <figure> <img src={fashion} alt="Fashion" /> </figure>
+                <figure> <img src={kitchenImg} alt="Fashion" /> </figure>
                 <div className="card-body">
                     <h2 className="card-title">{'Fashoion and Buauti'}!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
