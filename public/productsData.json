@@ -92,7 +92,7 @@
     {
         "_id": 10,
         "name": "Chair",
-        "category": "home_applience",
+        "category": "plastic",
         "img": "https://example.com/image1.jpg",
         "price": 9.99,
         "description": "Description of Product 1",
@@ -102,7 +102,7 @@
     {
         "_id": 12,
         "name": "Table",
-        "category": "home_applience",
+        "category": "plastic",
         "img": "https://example.com/image2.jpg",
         "price": 14.50,
         "description": "Description of Product 2",
@@ -112,7 +112,7 @@
     {
         "_id": 13,
         "name": "Bed",
-        "category": "home_applience",
+        "category": "plastic",
         "img": "https://example.com/image3.jpg",
         "price": 25.99,
         "description": "Description of Product 3",
