@@ -12,9 +12,9 @@ const CategoryCart = ({ items }) => {
     const kitchen = items.filter(item => item.category === 'kitchen')
 
     return (
-        <div>
-            <div className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full">
-                <figure><img src={s_phone} alt="Shoes" /></figure>
+        <div className='grid grid-cols-4 gap-4'>
+            <div className="carousel-item h-72 card bg-base-100 shadow-xl image-full">
+                <figure><img src={s_phone} alt="Phone" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{'title'}!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -24,8 +24,8 @@ const CategoryCart = ({ items }) => {
                 </div>
             </div>
             {/* Cart 2   */}
-            <div className="carousel-item w-56 md:w-96 h-72 card bg-base-100 shadow-xl image-full">
-                <figure> <img src={phone} alt="" /> </figure>
+            <div className="carousel-item h-72 card bg-base-100 shadow-xl image-full">
+                <figure> <img src={fashion} alt="Fashion" /> </figure>
                 <div className="card-body">
                     <h2 className="card-title">{'title'}!</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
