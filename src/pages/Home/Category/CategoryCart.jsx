@@ -7,7 +7,7 @@ import kitchenImg from '../../../assets/kitchen.jpg'
 
 const CategoryCart = ({ items }) => {
 
-    console.log(items)
+    // console.log(items)
 
     const phone = items.filter(item => item.category === 'phone')
     const electronic = items.filter(item => item.category === 'electronic')
