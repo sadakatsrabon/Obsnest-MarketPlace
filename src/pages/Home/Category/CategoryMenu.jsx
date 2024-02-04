@@ -8,6 +8,7 @@ const CategoryMenu = () => {
         <div>
             <Helmet>
                 <title>Obsnet Category</title>
+                <h2>hellow . welcome to category menu.</h2>
             </Helmet>
         </div>
     );
