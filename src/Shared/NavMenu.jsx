@@ -16,7 +16,7 @@ const NavMenu = () => {
             </>
         </>
     return (
-        <div className="navbar h-1 fixed z-10 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
+        <div className="navbar h-1 fixed z-20 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
