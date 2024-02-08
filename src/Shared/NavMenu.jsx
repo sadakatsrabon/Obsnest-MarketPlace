@@ -5,8 +5,6 @@ import logo from "../assets/logo.jpg"
 const NavMenu = () => {
     const navOptions =
         <>
-
-
             <li><Link to="/order/:salad"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Order Item</button></Link></li>
             <li><Link to='/dashboard/'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link></li>
             <>
