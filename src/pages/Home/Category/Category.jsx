@@ -5,20 +5,19 @@ import { data } from "autoprefixer";
 
 
 const Category = () => {
-    // const [loadedData, setLoadedData] = useState([]);
+    // const [data, setdata] = useState([]);
 
-    // const phone = loadedData.filter(item => item.category === 'phone')
+    // const phone = data.filter(item => item.category === 'phone')
     // console.log(phone)
 
-    // console.log(loadedData);
+    // console.log(data);
 
-    const loadedData = useData(data)
-    console.log(loadedData);
+    const [data] = useData()
 
     return (
         <div>
             <CategoryCart
-                items={loadedData}
+                items={data}
             ></CategoryCart>
         </div>
     );
