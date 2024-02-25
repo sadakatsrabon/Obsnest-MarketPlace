@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const useData = () => {
     const [data, setData] = useState([]);
-    const [loadig, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetch('productsData.json')
             .then(res => res.json())
@@ -13,6 +13,6 @@ const useData = () => {
                 setLoading(false);
             })
     }, [])
-    return [data]
+    return [data, loading]
 }
 export default useData;
