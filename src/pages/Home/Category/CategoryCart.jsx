@@ -18,11 +18,11 @@ const CategoryCart = ({ items }) => {
     return (
         <div className='md:grid grid-cols-2 gap-4'>
             {
-                items.map(item => {
+                items.map(item => 
                     <div key={item._id}>
-
+                        <h2>{item.name}</h2>
                     </div>
-                })
+                )
             }
 
             <div className="h-72 px-2 py-4 card bg-base-100 shadow-xl image-full">
