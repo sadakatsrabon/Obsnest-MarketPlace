@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
-import Category from "../Category/Category";
 
 const HomeMain = () => {
 
@@ -33,7 +32,6 @@ const HomeMain = () => {
                 subHeadin={"Special Category By OBSNEST Market"}
                 heading={"Category"}
             ></SectionTitle>
-            <Category></Category>
         </div>
     );
 };
