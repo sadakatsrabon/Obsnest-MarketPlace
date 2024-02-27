@@ -3,19 +3,18 @@ import { Helmet } from "react-helmet";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
+import useData from "../../../components/Hooks/useData";
 
 const HomeMain = () => {
 
-    // const [productsData, setData] = useState([])
+    const [loadedData] = useData()
 
-    // useEffect(() => {
-    //     fetch('productsData.json')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setData(data)
-    //             console.log(productsData)
-    //         })
-    // }, [productsData])
+    const phone = loadedData.filter(item => item.category === 'phone');
+    const kitchen = loadedData.filter(item => item.category === 'kitchen');
+    const plastic = loadedData.filter(item => item.category === 'plastic');
+    const electronic = loadedData.filter(item => item.category === 'electronic');
+    const fashion_beauty = loadedData.filter(item => item.category = 'fashion_beauty')
+
     return (
         <div className="pt-14" >
             <Helmet>

@@ -62,7 +62,7 @@
     {
         "_id": 7,
         "name": "T-Shirt",
-        "category": "fashion_beauti",
+        "category": "fashion_beauty",
         "img": "https://example.com/image1.jpg",
         "price": 9.99,
         "description": "Description of Product 1",
@@ -72,7 +72,7 @@
     {
         "_id": 8,
         "name": "Shirt",
-        "category": "fashion_beauti",
+        "category": "fashion_beauty",
         "img": "https://example.com/image2.jpg",
         "price": 14.50,
         "description": "Description of Product 2",
@@ -82,7 +82,7 @@
     {
         "_id": 9,
         "name": "Pant",
-        "category": "fashion_beauti",
+        "category": "fashion_beauty",
         "img": "https://example.com/image3.jpg",
         "price": 25.99,
         "description": "Description of Product 3",
