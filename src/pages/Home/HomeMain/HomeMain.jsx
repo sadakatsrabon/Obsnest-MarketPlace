@@ -4,6 +4,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 import useData from "../../../components/Hooks/useData";
+import Category from "../../../components/Category/Category";
 
 const HomeMain = () => {
 
@@ -27,10 +28,13 @@ const HomeMain = () => {
                 <SideSwiper></SideSwiper>
             </div>
             {/* Category */}
-            <SectionTitle
-                subHeadin={"Special Category By OBSNEST Market"}
-                heading={"Category"}
-            ></SectionTitle>
+            <div>
+                <SectionTitle
+                    subHeadin={"Special Category By OBSNEST Market"}
+                    heading={"Category"}
+                ></SectionTitle>
+                <Category></Category>
+            </div>
         </div>
     );
 };
