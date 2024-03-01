@@ -5,11 +5,11 @@ const Category = (params) => {
     const plastic = params.plastic
     const electronic = params.electronic
     const fashion_beauty = params.fashion_beauty
-    console.log(smart, kitchen, plastic, electronic, fashion_beauty)
+    console.log(smart[0])
     return (
         <div>
             <div className="text-center">
-                <h2 className="text-4xl font-semibold">{smart.name}</h2>
+                <h2 className="text-4xl font-semibold">{smart[0].name}</h2>
 
                 <h2 className="text-4xl font-semibold">{kitchen.category}</h2>
                 <h2 className="text-4xl font-semibold">Component for Plastic Category</h2>
