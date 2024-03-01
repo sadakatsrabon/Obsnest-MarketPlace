@@ -1,11 +1,17 @@
 
 const Category = (params) => {
-    console.log(params)
+    const smart = params.smart
+    const kitchen = params.kitchen
+    const plastic = params.plastic
+    const electronic = params.electronic
+    const fashion_beauty = params.fashion_beauty
+    console.log(smart, kitchen, plastic, electronic, fashion_beauty)
     return (
         <div>
             <div className="text-center">
-                <h2 className="text-4xl font-semibold">Component for Smart Category</h2>
-                <h2 className="text-4xl font-semibold">Component for Kitchen Category</h2>
+                <h2 className="text-4xl font-semibold">{smart.name}</h2>
+
+                <h2 className="text-4xl font-semibold">{kitchen.category}</h2>
                 <h2 className="text-4xl font-semibold">Component for Plastic Category</h2>
                 <h2 className="text-4xl font-semibold">Component for Electronics Category</h2>
                 <h2 className="text-4xl font-semibold">Component for Fashion and beauti Category</h2>
