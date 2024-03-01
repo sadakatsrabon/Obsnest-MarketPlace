@@ -14,8 +14,8 @@ const HomeMain = () => {
     const kitchen = loadedData.filter(item => item.category === 'kitchen');
     const plastic = loadedData.filter(item => item.category === 'plastic');
     const electronic = loadedData.filter(item => item.category === 'electronic');
-    const fashion_beauty = loadedData.filter(item => item.category = 'fashion_beauty')
-
+    const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
+    // console.log(kitchen)
     return (
         <div className="pt-14" >
             <Helmet>
@@ -36,7 +36,7 @@ const HomeMain = () => {
                 <Category
                     smart={smart}
                     kitchen={kitchen}
-                    plastic={electronic}
+                    plastic={plastic}
                     electronic={electronic}
                     fashion_beauty={fashion_beauty}
                 ></Category>

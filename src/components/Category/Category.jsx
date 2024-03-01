@@ -1,5 +1,6 @@
 
-const Category = () => {
+const Category = (params) => {
+    console.log(params)
     return (
         <div>
             <div className="text-center">
