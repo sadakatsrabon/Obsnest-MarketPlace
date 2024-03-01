@@ -10,7 +10,7 @@ const HomeMain = () => {
 
     const [loadedData] = useData()
 
-    const phone = loadedData.filter(item => item.category === 'phone');
+    const smart = loadedData.filter(item => item.category === 'smart');
     const kitchen = loadedData.filter(item => item.category === 'kitchen');
     const plastic = loadedData.filter(item => item.category === 'plastic');
     const electronic = loadedData.filter(item => item.category === 'electronic');
@@ -33,7 +33,13 @@ const HomeMain = () => {
                     subHeadin={"Special Category By OBSNEST Market"}
                     heading={"Category"}
                 ></SectionTitle>
-                <Category></Category>
+                <Category
+                    smart={smart}
+                    kitchen={kitchen}
+                    plastic={electronic}
+                    electronic={electronic}
+                    fashion_beauty={fashion_beauty}
+                ></Category>
             </div>
         </div>
     );
