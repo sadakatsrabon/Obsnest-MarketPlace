@@ -11,6 +11,9 @@ const Category = (params) => {
             <div className="text-center">
                 <div>
                     <h2 className="text-4xl font-semibold">{smart[0]?.category}</h2>
+                    {
+                        smart.map((item => <div key={item?.name}></div>))
+                    }
                 </div>
                 <div>
                     <h2 className="text-4xl font-semibold">{kitchen[0]?.category}</h2>
