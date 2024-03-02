@@ -9,16 +9,12 @@ const Category = (params) => {
     return (
         <div>
             <div className="text-center">
-                <h2 className="text-4xl font-semibold">
-                    {
-                        smart.map() = item => <div key={item._id}></div>
-                   }
-                </h2>
+                <h2 className="text-4xl font-semibold">{smart[0]?.category}</h2>
 
-                <h2 className="text-4xl font-semibold"></h2>
-                <h2 className="text-4xl font-semibold">Component for Plastic Category</h2>
-                <h2 className="text-4xl font-semibold">Component for Electronics Category</h2>
-                <h2 className="text-4xl font-semibold">Component for Fashion and beauti Category</h2>
+                <h2 className="text-4xl font-semibold">{kitchen[0]?.category}</h2>
+                <h2 className="text-4xl font-semibold">{plastic[0]?.category}</h2>
+                <h2 className="text-4xl font-semibold">{electronic[0]?.category}</h2>
+                <h2 className="text-4xl font-semibold">{fashion_beauty[0]?.category}</h2>
             </div>
         </div>
     );
