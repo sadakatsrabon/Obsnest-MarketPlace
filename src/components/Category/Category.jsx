@@ -12,7 +12,9 @@ const Category = (params) => {
                 <div>
                     <h2 className="text-4xl font-semibold">{smart[0]?.category}</h2>
                     {
-                        smart.map((item => <div key={item?.name}></div>))
+                        smart.map((item => <div key={item?._id}>
+                            <h2>{item.name}</h2>
+                        </div>))
                     }
                 </div>
                 <div>
