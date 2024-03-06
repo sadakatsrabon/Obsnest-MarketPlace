@@ -17,49 +17,46 @@ const Category = (params) => {
             <div className="text-center">
                 <div>
                     <h2 className="text-4xl font-semibold">{smart[0]?.category}</h2>
-                    {
-                        smart.map((item =>
 
-                            <Swiper
-                                key={item.name}
-                                slidesPerView={1}
-                                spaceBetween={10}
-                                pagination={{
-                                    clickable: true,
-                                }}
-                                breakpoints={{
-                                    '@0.00': {
-                                        slidesPerView: 1,
-                                        spaceBetween: 10,
-                                    },
-                                    '@0.75': {
-                                        slidesPerView: 2,
-                                        spaceBetween: 20,
-                                    },
-                                    '@1.00': {
-                                        slidesPerView: 3,
-                                        spaceBetween: 40,
-                                    },
-                                    '@1.50': {
-                                        slidesPerView: 4,
-                                        spaceBetween: 50,
-                                    },
-                                }}
-                                modules={[Pagination]}
-                                className="mySwiper"
-                            >
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
-                            </Swiper>
+                    {/* Swiper Slide */}
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={10}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        breakpoints={{
+                            '@0.00': {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            '@0.75': {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            '@1.00': {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            '@1.50': {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            {
+                                smart.map((item =>
+                                    <SwiperSlide key={item.name}> <Cart></Cart> </SwiperSlide>
+                                ))
+                            }
+                        </SwiperSlide>
+                    </Swiper>
 
-                        ))
-                    }
+
+
                 </div>
                 <div>
                     <h2 className="text-4xl font-semibold">{kitchen[0]?.category}</h2>
