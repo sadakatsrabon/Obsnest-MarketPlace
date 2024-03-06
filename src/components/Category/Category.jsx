@@ -3,6 +3,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 // import required modules
 import { Pagination } from 'swiper/modules';
+import Cart from '../Cart/Cart';
 
 const Category = (params) => {
     const smart = params.smart
@@ -47,7 +48,14 @@ const Category = (params) => {
                                 modules={[Pagination]}
                                 className="mySwiper"
                             >
-                                <SwiperSlide>Slide 1</SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
+                                <SwiperSlide> <Cart></Cart> </SwiperSlide>
                             </Swiper>
 
                         ))
