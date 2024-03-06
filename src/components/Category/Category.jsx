@@ -1,4 +1,8 @@
-import CategorySwiper from "./CategorySwiper/CategorySwiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/pagination';
+import './styles.css';
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 const Category = (params) => {
     const smart = params.smart
@@ -15,25 +19,36 @@ const Category = (params) => {
                     {
                         smart.map((item =>
 
-
-                            <CategorySwiper key={item?._id}>
-
-                                <div>
-                                    {/* Carousel */}
-                                    {/* Cart */}
-                                    <div className="card w-96 bg-base-100 shadow-xl">
-                                        <div className="card-body">
-                                            <h2 className="card-title">Shoes!</h2>
-                                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                                        </div>
-                                        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                                    </div>
-                                </div>
-
-                            </CategorySwiper>
-
-
-
+                            <Swiper
+                                key={item.name}
+                                slidesPerView={1}
+                                spaceBetween={10}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                breakpoints={{
+                                    '@0.00': {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+                                    '@0.75': {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+                                    '@1.00': {
+                                        slidesPerView: 3,
+                                        spaceBetween: 40,
+                                    },
+                                    '@1.50': {
+                                        slidesPerView: 4,
+                                        spaceBetween: 50,
+                                    },
+                                }}
+                                modules={[Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>Slide 1</SwiperSlide>
+                            </Swiper>
 
                         ))
                     }
