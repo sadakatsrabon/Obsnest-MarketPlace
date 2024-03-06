@@ -46,13 +46,11 @@ const Category = (params) => {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
                             {
                                 smart.map((item =>
-                                    <SwiperSlide key={item.name}> <Cart></Cart> </SwiperSlide>
+                                    <SwiperSlide key={item.name}> <Cart item={item}></Cart> </SwiperSlide>
                                 ))
                             }
-                        </SwiperSlide>
                     </Swiper>
 
 
