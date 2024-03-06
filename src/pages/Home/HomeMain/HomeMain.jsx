@@ -8,14 +8,14 @@ import Category from "../../../components/Category/Category";
 
 const HomeMain = () => {
 
-    const [loadedData] = useData()
-
+    const [loadedData] = useData();
     const smart = loadedData.filter(item => item.category === 'smart');
     const kitchen = loadedData.filter(item => item.category === 'kitchen');
     const plastic = loadedData.filter(item => item.category === 'plastic');
     const electronic = loadedData.filter(item => item.category === 'electronic');
     const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
     // console.log(kitchen)
+    
     return (
         <div className="pt-14" >
             <Helmet>

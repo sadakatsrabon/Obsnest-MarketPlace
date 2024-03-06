@@ -1,7 +1,7 @@
 
 
 const Cart = (params) => {
-    // console.log(params)
+    console.log(params,"Params")
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
             {/* map */}
