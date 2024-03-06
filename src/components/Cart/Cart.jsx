@@ -1,8 +1,13 @@
 
 
-const Cart = () => {
+const Cart = (params) => {
+    // console.log(params)
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
+            {/* map */}
+            {/* {
+                params.map(item => console.log(item))
+            } */}
             <figure className="px-10 pt-10">
                 <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
             </figure>
