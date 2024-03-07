@@ -6,16 +6,15 @@ import { Pagination } from 'swiper/modules';
 import Cart from '../Cart/Cart';
 
 // const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
-const Category = (params) => {
-    const { smart, kitchen, plastic, electronic, fashion_beauty } = params;
+const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
     const productData = [{ smart }, { kitchen }, { plastic }, { electronic }, { fashion_beauty }]
-    console.log(productData, "fromProductData")
+    // console.log(productData, "fromProductData")
     return (
         <div>
             {
-                productData?.map((item, index) => (<div key={index} className="text-center">
+                productData?.map((item, index) => <div key={index} className="text-center">
                     <div>
-                        <h2 className="text-4xl font-semibold">{smart[0]?.category}</h2>
+                        <h2 className="text-4xl font-semibold">{productData[0]?.category}</h2>
                         {/* Swiper Slide */}
                         <Swiper
                             slidesPerView={1}
@@ -51,8 +50,8 @@ const Category = (params) => {
                             }
                         </Swiper>
                     </div>
-                    
-                </div>))
+
+                </div>)
             }
         </div>
 
