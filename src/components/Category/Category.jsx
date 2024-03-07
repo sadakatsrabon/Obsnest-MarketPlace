@@ -7,14 +7,22 @@ import Cart from '../Cart/Cart';
 const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
     // const [, setProductData] = useState([{ smart }, { kitchen }, { plastic }, { electronic }, { fashion_beauty }]);
 
+    const categories = [
+        { title: "Smart", data: smart },
+        { title: "Kitchen", data: kitchen },
+        { title: "Plastic", data: plastic },
+        { title: "Electronic", data: electronic },
+        { title: "Fashion & Beauty", data: fashion_beauty }
+    ];
+
     const productData = [{ smart }, { kitchen }, { plastic }, { electronic }, { fashion_beauty }]
     //    console.log(productData)
     return (
         <div>
             {
-                productData?.map((productItem, index) => <div key={index}
+                categories?.map((category, index) => <div key={index}
                     className="text-center">
-                    <h2 className="text-4xl font-semibold">{"productItem.category"}</h2>
+                    <h2 className="text-4xl font-semibold">{category.title}</h2>
                     {/* Swiper Slide */}
                     <Swiper
                         slidesPerView={1}
@@ -44,7 +52,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                         className="mySwiper"
                     >
                         {
-                            productData.map(((item, index) =>
+                            category.data.map(((item, index) =>
                                 <SwiperSlide key={index}>
 
                                     <div className="card w-96 bg-base-100 shadow-xl">

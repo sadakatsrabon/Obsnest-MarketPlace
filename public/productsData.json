@@ -148,5 +148,305 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green"
+    },
+    {
+        "_id": 1,
+        "name": "S Smart Phone",
+        "category": "smart",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 2,
+        "name": "Samsung S10",
+        "category": "smart",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 3,
+        "name": "Apple 3",
+        "category": "smart",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 4,
+        "name": "S Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 5,
+        "name": "Walton Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 6,
+        "name": "Lg Refreterator",
+        "category": "electronic",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 7,
+        "name": "T-Shirt",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 8,
+        "name": "Shirt",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 9,
+        "name": "Pant",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 10,
+        "name": "Chair",
+        "category": "plastic",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 12,
+        "name": "Table",
+        "category": "plastic",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 13,
+        "name": "Bed",
+        "category": "plastic",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 14,
+        "name": "Coocker",
+        "category": "kitchen",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 15,
+        "name": "Rice Cooker",
+        "category": "kitchen",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 16,
+        "name": "jar",
+        "category": "kitchen",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 1,
+        "name": "S Smart Phone",
+        "category": "smart",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 2,
+        "name": "Samsung S10",
+        "category": "smart",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 3,
+        "name": "Apple 3",
+        "category": "smart",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 4,
+        "name": "S Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 5,
+        "name": "Walton Refregerator",
+        "category": "electronic",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 6,
+        "name": "Lg Refreterator",
+        "category": "electronic",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 7,
+        "name": "T-Shirt",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 8,
+        "name": "Shirt",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 9,
+        "name": "Pant",
+        "category": "fashion_beauty",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 10,
+        "name": "Chair",
+        "category": "plastic",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 12,
+        "name": "Table",
+        "category": "plastic",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 13,
+        "name": "Bed",
+        "category": "plastic",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
+    },
+    {
+        "_id": 14,
+        "name": "Coocker",
+        "category": "kitchen",
+        "img": "https://example.com/image1.jpg",
+        "price": 9.99,
+        "description": "Description of Product 1",
+        "brandName": "Brand Name 1",
+        "color": "Blue"
+    },
+    {
+        "_id": 15,
+        "name": "Rice Cooker",
+        "category": "kitchen",
+        "img": "https://example.com/image2.jpg",
+        "price": 14.50,
+        "description": "Description of Product 2",
+        "brandName": "Brand Name 2",
+        "color": "Red"
+    },
+    {
+        "_id": 16,
+        "name": "jar",
+        "category": "kitchen",
+        "img": "https://example.com/image3.jpg",
+        "price": 25.99,
+        "description": "Description of Product 3",
+        "brandName": "Brand Name 3",
+        "color": "Green"
     }
 ]
