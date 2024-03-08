@@ -36,7 +36,6 @@ const NavMenu = () => {
 
                 <ul className="menu menu-horizontal px-1">
                     {navOptions}
-                    
                 </ul>
 
             </div>
