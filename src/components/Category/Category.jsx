@@ -59,11 +59,14 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                             </figure>
                                             <div className="card-body items-center text-center">
                                                 <h2 className="card-title">{item.name}</h2>
-                                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                                <p>{item.description}</p>
+                                                <p>${item.price}</p>
+                                                {/* Button */}
                                                 <div className="flex gap-2">
-                                                    <button className="btn btn-primary">Buy Now</button>
+                                                    <button className="btn border-none border-b-2 btn-primary">Buy Now</button>
                                                     <button className="btn btn-outline bg-sky-300 text-black">Add To Card</button>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </SwiperSlide>
