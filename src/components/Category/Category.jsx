@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import './styles.css';
 import { Pagination } from 'swiper/modules';
-import Cart from '../Cart/Cart';
 
 const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
 
