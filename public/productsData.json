@@ -8,6 +8,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -19,6 +20,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -30,6 +32,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": 0.3
     },
     {
@@ -41,6 +44,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -52,6 +56,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -63,6 +68,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -74,6 +80,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -85,6 +92,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -96,6 +104,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": 0.23
     },
     {
@@ -107,6 +116,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -118,6 +128,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -129,6 +140,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -140,6 +152,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -151,6 +164,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -162,6 +176,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -173,6 +188,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": 0.77
     },
     {
@@ -184,6 +200,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -195,6 +212,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -206,6 +224,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -217,6 +236,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -228,6 +248,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -239,6 +260,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -250,6 +272,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -261,6 +284,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -272,6 +296,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -283,6 +308,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -294,6 +320,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -305,6 +332,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -316,6 +344,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -327,6 +356,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -338,6 +368,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -349,6 +380,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -360,6 +392,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -371,6 +404,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -382,6 +416,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -393,6 +428,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -404,6 +440,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -415,6 +452,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -426,6 +464,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -437,6 +476,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": 0.5
     },
     {
@@ -448,6 +488,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -459,6 +500,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -470,6 +512,7 @@
         "description": "Description of Product 1",
         "brandName": "Brand Name 1",
         "color": "Blue",
+        "offerStatus": "-",
         "deliveryStatus": 1
     },
     {
@@ -481,6 +524,7 @@
         "description": "Description of Product 2",
         "brandName": "Brand Name 2",
         "color": "Red",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     },
     {
@@ -492,6 +536,7 @@
         "description": "Description of Product 3",
         "brandName": "Brand Name 3",
         "color": "Green",
+        "offerStatus": "-",
         "deliveryStatus": "Free Delivery"
     }
 ]
