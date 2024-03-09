@@ -11,9 +11,9 @@ const NavMenu = () => {
             <li><Link to='/dashboard/'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link></li>
             <>
             </> :
-            <li><Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link></li>
             <>
-                <li><Link to="/signup"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>SignUp</button></Link></li>
+            <li><Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link></li>
+                
             </>
         </>
     return (

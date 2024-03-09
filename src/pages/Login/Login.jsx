@@ -20,9 +20,7 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" placeholder="password" className="input input-bordered" required />
-                            <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                            </label>
+                                <a href="/signup" className="label-text-alt link link-hover">Create New Account ?</a>
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
