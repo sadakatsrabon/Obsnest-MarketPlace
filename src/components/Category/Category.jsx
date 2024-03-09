@@ -63,9 +63,9 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                                     <p>{item.description}</p>
                                                     <div className='divider w-1/2 mx-auto my-0'></div>
                                                     <p>${item.price}</p>
-                                                    <div className='flex gap-2'>
-                                                        <p className=' border-2 border-orange-600 rounded-lg px-1 text-orange-600'>{item.deliveryStatus}</p>
-                                                        <p className='border'>{item.offerStatus}</p>
+                                                    <div className='gap-2'>
+                                                        <p className='w-full px-4 border-2 border-orange-600 rounded-lg text-orange-600'>DeliveryC. {item.deliveryStatus}</p>
+                                                        <p className='w-full px-4 border-2 bg-sky-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
                                                     </div>
                                                     {/* Button */}
                                                     {/* <div className="flex gap-2">
