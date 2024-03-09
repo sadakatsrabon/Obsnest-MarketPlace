@@ -61,12 +61,17 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                                 <div className="card-body items-center text-center">
                                                     <h2 className="card-title">{item.name}</h2>
                                                     <p>{item.description}</p>
+                                                    <div className='divider w-1/2 mx-auto my-0'></div>
                                                     <p>${item.price}</p>
-                                                    {/* Button */}
-                                                    <div className="flex gap-2">
-                                                        <button className="btn border-none border-b-2 btn-primary">Buy Now</button>
-                                                        <button className="btn btn-outline bg-sky-300 text-black">Add To Card</button>
+                                                    <div>
+                                                        <p className='border-2'>{item.deliveryStatus}</p>
+                                                        
                                                     </div>
+                                                    {/* Button */}
+                                                    {/* <div className="flex gap-2">
+                                                        <button className="btn btn-outline border-0 border-b-4 border-l-4 border-t-2 border-r btn-sm  btn-primary">Buy Now</button>
+                                                        <button className="btn btn-outline border-0 border-b-4 border-r-4 border-t-2 border-l btn-sm text-black">Add To Card</button>
+                                                    </div> */}
 
                                                 </div>
                                             </div>
