@@ -1,4 +1,3 @@
-// import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
@@ -15,7 +14,7 @@ const HomeMain = () => {
     const electronic = loadedData.filter(item => item.category === 'electronic');
     const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
     // console.log(kitchen)
-    
+
     return (
         <div className="pt-14" >
             <Helmet>
