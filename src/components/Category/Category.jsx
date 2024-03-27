@@ -67,12 +67,6 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                                         <p className='w-full px-4 border-2 border-orange-600 rounded-lg text-orange-600'>DeliveryC. {item.deliveryStatus}</p>
                                                         <p className='w-full px-4 border-2 bg-sky-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
                                                     </div>
-                                                    {/* Button */}
-                                                    {/* <div className="flex gap-2">
-                                                        <button className="btn btn-outline border-0 border-b-4 border-l-4 border-t-2 border-r btn-sm  btn-primary">Buy Now</button>
-                                                        <button className="btn btn-outline border-0 border-b-4 border-r-4 border-t-2 border-l btn-sm text-black">Add To Card</button>
-                                                    </div> */}
-
                                                 </div>
                                             </div>
                                         </SwiperSlide>
