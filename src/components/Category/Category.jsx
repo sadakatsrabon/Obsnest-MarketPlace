@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import './styles.css';
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
 
@@ -54,7 +55,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                 category.data.map(((item) =>
                                     <div className='' key={item._id}>
                                         <SwiperSlide>
-                                            <div className="card w-96 bg-base-100 shadow-xl">
+                                            <Link to={`product/product-details/${item._id}`} className="card hover:scale-110 duration-75 w-96 bg-base-100 shadow-xl">
                                                 <figure className="px-10 pt-10">
                                                     <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
                                                 </figure>
@@ -68,7 +69,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                                         <p className='w-full px-4 border-2 bg-sky-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </SwiperSlide>
                                     </div>
                                 ))
