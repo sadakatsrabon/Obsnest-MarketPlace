@@ -8,19 +8,19 @@ import ProductDetails from '../pages/ProductDetails/ProductDetails';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
+    element: <MainLayout/>,
     children: [
       {
         path: "/",
-        element: <HomeMain></HomeMain>
+        element: <HomeMain/>
       },
       {
         path: 'login',
-        element: <Login></Login>
+        element: <Login/>
       }, 
       {
         path: 'signup',
-        element: <SignUp></SignUp>
+        element: <SignUp/>
       },
       {
         path: 'product/product-details/:_id',

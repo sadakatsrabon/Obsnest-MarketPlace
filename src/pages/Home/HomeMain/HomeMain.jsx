@@ -13,7 +13,7 @@ const HomeMain = () => {
     const plastic = loadedData.filter(item => item.category === 'plastic');
     const electronic = loadedData.filter(item => item.category === 'electronic');
     const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
-    // console.log(kitchen)
+    // console.log([loadedData], "console.log")
 
     return (
         <div className="pt-14" >

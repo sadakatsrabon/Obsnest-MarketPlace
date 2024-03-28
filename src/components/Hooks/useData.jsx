@@ -1,20 +1,31 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const useData = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-        fetch('productsData.json')
-            .then(res => res.json())
-            .then(data => {
-                setData(data)
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/productsData.json');
+                const jsonData = await response.json();
+                setData(jsonData);
                 setLoading(false);
-            })
-    }, [])
-    return [data, loading]
-}
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+
+    }, []);
+
+    return [data, loading];
+};
+
 export default useData;
+
 
 
 
