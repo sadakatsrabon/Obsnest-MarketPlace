@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 
 const ProductDetails = () => {
-    const router = useParams();
-    const paramsId = router._id;
-    // console.log(paramsId)
+    const { _id } = useParams();
+    // const paramsId = router._id;
+    console.log(_id )
     const loadedProduct = useData();
+
 
     console.log(loadedProduct)
     // const smart = loadedProduct[0].filter(item => item._id === `${_id}`);
