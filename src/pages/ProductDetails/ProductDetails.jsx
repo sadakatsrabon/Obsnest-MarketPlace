@@ -1,28 +1,34 @@
 import { useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 import { useEffect, useState } from "react";
+import SingleCart from "../../components/SingleCart/SingleCart";
 
 const ProductDetails = () => {
     const [selectedItem, setSelectedItem] = useState(null);
     const { _id } = useParams();
-    const loadedProduct = useData();
+    const [loadedProduct, isLoading] = useData();
+    // console.log(isLoading);
 
     useEffect(() => {
         if (loadedProduct && loadedProduct.length > 0) {
-            const selectedProduct = loadedProduct[0].find(item => item._id == _id);
+            const selectedProduct = loadedProduct.find(item => item._id == _id);
             setSelectedItem(selectedProduct);
         }
     }, [_id, loadedProduct]);
 
-    
     useEffect(() => {
-        console.log(selectedItem && 'Data founded' || 'Can not find data');
-
+        // console.log(selectedItem);
+        // console.log(selectedItem && 'Data founded' || 'Can not find data');
     }, [selectedItem]);
 
     return (
         <div className="pt-20">
-            <h2>This is the product details page id no:{_id} form {loadedProduct[0].length} data.</h2>
+            {
+                isLoading ? <p>Loangin...</p> : <SingleCart
+                    item={selectedItem}
+                    isLoading={isLoading}
+                ></SingleCart>
+            }
         </div>
     );
 };
