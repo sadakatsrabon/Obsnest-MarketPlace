@@ -14,9 +14,10 @@ const ProductDetails = () => {
         }
     }, [_id, loadedProduct]);
 
-
+    
     useEffect(() => {
-        console.log(selectedItem, "No Data Found");
+        console.log(selectedItem && 'Data founded' || 'Can not find data');
+
     }, [selectedItem]);
 
     return (
