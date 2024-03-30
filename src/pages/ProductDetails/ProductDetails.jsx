@@ -9,26 +9,15 @@ const ProductDetails = () => {
 
     useEffect(() => {
         if (loadedProduct && loadedProduct.length > 0) {
-            const selectedProduct = loadedProduct.find(item => item._id === _id);
+            const selectedProduct = loadedProduct[0].find(item => item._id == _id);
             setSelectedItem(selectedProduct);
-            // console.log(selectedItem);
         }
     }, [_id, loadedProduct]);
 
 
     useEffect(() => {
-        // This will log the updated value of selectedItem
-        console.log(selectedItem);
+        console.log(selectedItem, "No Data Found");
     }, [selectedItem]);
-
-
-
-
-    // console.log(_id )
-    // console.log(loadedProduct);
-
-
-
 
     return (
         <div className="pt-20">
