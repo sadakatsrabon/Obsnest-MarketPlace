@@ -19,19 +19,23 @@ const SingleCart = ({ item, isLoading }) => {
                     <p>{category}</p>
                     <figure><img src={img} alt="Movie" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">{name}</h2>
-                        <p>{brandName}</p>
+                        <h2 className="card-title text-2xl">{name}</h2>
+                        <p>by {brandName}</p>
+                        <div className="divider"></div>
                         <p>{description}</p>
-                        <p>Price: {price}</p>
                         <p>Color: {color}</p>
-                        <p>Offer Status: {offerStatus}</p>
                         <p>Delivery Status: {deliveryStatus}</p>
+                        <div className="flex">
+                            <p>Price: {price}</p>
+                            <p>Offer Status: {offerStatus}</p>
+                        </div>
 
 
-                        <div className="card-actions justify-end">
+                        <div className="card-actions justify-center pt-5">
                             <button className="btn btn-primary">Add To Cart</button>
                         </div>
                     </div>
+                    <button className="btn uppercase">Back <br></br> To <br></br> Home</button>
                 </div>
             }
         </>
