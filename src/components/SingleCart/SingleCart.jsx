@@ -1,18 +1,18 @@
-// 
 
 
 const SingleCart = ({ item, isLoading }) => {
-    // if (!isLoading) {
-    //     return <p>Loading....</p>
-    // }
-    // else (
-    //     console.log("After Loading")
-    // )
-    // const { name } = item;
-    // console.log(item, "From Single Cart Component")
+
+    if (isLoading) {
+        return <p>Loading....</p>
+    }
+
+    if (!item) {
+        return <p>No item available</p>;
+    }
+
     return (
         <>
-            { !isLoading &&
+            {!isLoading &&
                 <div className="card card-side bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
                     <div className="card-body">
