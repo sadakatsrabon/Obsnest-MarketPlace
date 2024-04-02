@@ -16,17 +16,17 @@ const SingleCart = ({ item, isLoading }) => {
         <>
             {!isLoading &&
                 <div className="card card-side bg-base-100 shadow-xl">
-                    <p>{category}</p>
-                    <figure><img src={img} alt="Movie" /></figure>
+                    <p>Category: {category}</p>
+                    <figure><img className="w-96" src={img} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-2xl">{name}</h2>
-                        <p>by {brandName}</p>
+                        <p>By {brandName}</p>
                         <div className="divider"></div>
                         <p>{description}</p>
                         <p>Color: {color}</p>
-                        <p>Delivery Status: {deliveryStatus}</p>
+                        <p>Delivery Charge: {deliveryStatus}</p>
                         <div className="flex">
-                            <p>Price: {price}</p>
+                            <p className="text-yellow-800 font-semibold">Price: {price}</p>
                             <p>Offer Status: {offerStatus}</p>
                         </div>
 

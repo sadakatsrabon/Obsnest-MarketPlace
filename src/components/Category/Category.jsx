@@ -57,7 +57,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                         <SwiperSlide>
                                             <Link to={`product/product-details/${item._id}`} className="card hover:scale-110 duration-75 w-96 bg-base-100 shadow-xl">
                                                 <figure className="px-10 pt-10">
-                                                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+                                                    <img src={item.img} alt="Shoes" className="rounded-xl" />
                                                 </figure>
                                                 <div className="card-body items-center text-center">
                                                     <h2 className="card-title">{item.name}</h2>
