@@ -21,7 +21,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
             {
                 categories?.map((category, index) =>
                     <div key={index}
-                        className="text-center mt-10">
+                        className="text-center mt-10 border-b-4">
                         <h2 className="text-4xl font-semibold">{category.title}</h2>
                         {/* Swiper Slide */}
                         <Swiper
@@ -75,6 +75,9 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                                 ))
                             }
                         </Swiper>
+                        <div className='text-end'>
+                            <button className='btn btn-outline rounded-full text-3xl text-black'>{">"}</button>
+                        </div>
                     </div>)
             }
         </div>
