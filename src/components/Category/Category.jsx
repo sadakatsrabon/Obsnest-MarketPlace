@@ -76,7 +76,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                             }
                         </Swiper>
                         <div className='text-end'>
-                            <button className='btn btn-outline rounded-full text-3xl text-black'>{">"}</button>
+                            <Link to="product" className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link>
                         </div>
                     </div>)
             }

@@ -4,27 +4,32 @@ import MainLayout from '../Layout/MainLayout';
 import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
 import ProductDetails from '../pages/ProductDetails/ProductDetails';
+import Product from './Product/Product';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout/>,
+    element: <MainLayout />,
     children: [
       {
         path: "/",
-        element: <HomeMain/>
+        element: <HomeMain />
       },
       {
         path: 'login',
-        element: <Login/>
-      }, 
+        element: <Login />
+      },
       {
         path: 'signup',
-        element: <SignUp/>
+        element: <SignUp />
+      },
+      {
+        path: 'product',
+        element: <Product />
       },
       {
         path: 'product/product-details/:_id',
-        element: <ProductDetails/>
+        element: <ProductDetails />
       }
     ]
   },
