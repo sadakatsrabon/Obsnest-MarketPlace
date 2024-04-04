@@ -14,13 +14,13 @@ const Product = () => {
 
 
     const passedCategory = useParams();
-    const selectedCategory = passedCategory.category;
+    const selectedCategory = passedCategory.category.toLocaleLowerCase();
     // console.log(selectedCategory);
 
 
     useEffect(() => {
-        if (allDatas.length > 0) {
-            const filteredData = allDatas.filter((item) => item.category == 'smart');
+        if (allDatas.length > 0 && selectedCategory.length > 0) {
+            const filteredData = allDatas.filter((item) => item.category == selectedCategory);
             setSelectedData(filteredData);
             setLoading(false);
         }
