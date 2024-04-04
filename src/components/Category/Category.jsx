@@ -77,7 +77,8 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                             }
                         </Swiper>
                         <div className='text-end'>
-                            <Link to={`product/${category}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link>
+                            <Link to={`product/${category.title}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link>
+                            {/* <Link to={`product/${category}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link> */}
                         </div>
                     </div>)
             }
