@@ -36,19 +36,23 @@ const Product = () => {
     }, [selectedData]);
 
     if (loading) {
-        return <div className="text-7xl">Loading...</div>;
+        return <div className="text-4xl">Loading...</div>;
     }
 
     return (
         <div className='pt-20'>
-            <h2 className='text-3xl'>This is th product Page</h2>
-            {
-                selectedData?.map((item) =>
-                    <SingleCart
-                        key={item._id}
-                        item={item}
-                    ></SingleCart>)
-            }
+            <h2 className='text-3xl'>Showing Data By {selectedData.length > 0 ? selectedData[0].name : "Category"}</h2>
+            <div className="grid grid-cols-2 pt-28">
+                {
+                    selectedData?.map((item) =>
+                        <div key={item._id}>
+                            <SingleCart
+                                item={item}
+                            ></SingleCart>
+                        </div>
+                    )
+                }
+            </div>
         </div>
     );
 };
