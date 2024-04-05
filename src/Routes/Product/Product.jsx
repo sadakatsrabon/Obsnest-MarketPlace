@@ -3,6 +3,7 @@
 import { useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 import { useEffect, useState } from "react";
+import SingleCart from "../../components/SingleCart/SingleCart";
 
 const Product = () => {
     const [selectedData, setSelectedData] = useState([]);
@@ -35,12 +36,19 @@ const Product = () => {
     }, [selectedData]);
 
     if (loading) {
-        return <div className="texy-7xl">Loading...</div>;
+        return <div className="text-7xl">Loading...</div>;
     }
 
     return (
         <div className='pt-20'>
             <h2 className='text-3xl'>This is th product Page</h2>
+            {
+                selectedData?.map((item) =>
+                    <SingleCart
+                        key={item._id}
+                        item={item}
+                    ></SingleCart>)
+            }
         </div>
     );
 };

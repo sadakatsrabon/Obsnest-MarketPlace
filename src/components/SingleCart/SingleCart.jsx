@@ -16,7 +16,7 @@ const SingleCart = ({ item, isLoading }) => {
         <>
             {!isLoading &&
                 <div>
-                        <p className="text-center font-bold">Category: {category}</p>
+                    <p className="text-center font-bold">Category: {category}</p>
                     <div className="card card-side bg-base-100 shadow-xl">
                         <figure><img className="w-96" src={img} alt="Movie" /></figure>
                         <div className="card-body">
