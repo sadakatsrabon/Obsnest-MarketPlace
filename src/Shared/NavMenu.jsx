@@ -6,14 +6,15 @@ import logo from "../assets/logo.jpg"
 const NavMenu = () => {
     const navOptions =
         <>
-            <li><Link to="/order/:salad"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Order Item</button></Link></li>
-            <li><Link to='/dashboard/'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link></li>
-            <>
-            </> :
-            <>
-                <li><Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link></li>
-
-            </>
+            <li>
+                <Link to=""><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Order Item</button></Link>
+            </li>
+            <li>
+                <Link to='dashboard'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link>
+            </li>
+            <li>
+                <Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
+            </li>
         </>
     return (
         <div className="navbar h-1 fixed z-10 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
