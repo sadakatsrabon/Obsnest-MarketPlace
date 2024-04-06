@@ -1,6 +1,6 @@
 
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 import { useEffect, useState } from "react";
 import SingleCart from "../../components/SingleCart/SingleCart";
@@ -42,7 +42,8 @@ const Product = () => {
     return (
         <div className='pt-20'>
             <h2 className='text-3xl font-extrabold text-center'>Showing OBSNEST Data By Caegory :<span className="text-sky-500"> {selectedData.length > 0 ? selectedData[0].name : "Category"}</span></h2>
-            <div className="grid grid-cols-2 pt-28">
+
+            <div className="md:grid grid-cols-2 pt-28">
                 {
                     selectedData?.map((item) =>
                         <div key={item._id}>
