@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 import { useEffect, useState } from "react";
 import SingleCart from "../../components/SingleCart/SingleCart";
+import CartDetails from "../../components/CartDetails/CartDetails";
 
 const ProductDetails = () => {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -24,10 +25,11 @@ const ProductDetails = () => {
     return (
         <div className="pt-20">
             {
-                isLoading ? <p>Loangin...</p> : <SingleCart
-                    item={selectedItem}
-                    isLoading={isLoading}
-                ></SingleCart>
+                isLoading ? <p>Loangin...</p> :
+                    <CartDetails
+                        item={selectedItem}
+                        isLoading={isLoading}
+                    ></CartDetails>
             }
         </div>
     );
