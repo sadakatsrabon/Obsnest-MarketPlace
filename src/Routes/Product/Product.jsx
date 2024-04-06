@@ -42,14 +42,13 @@ const Product = () => {
         <div className='pt-20'>
             <h2 className='text-3xl font-extrabold text-center'>Showing OBSNEST Data By Caegory :<span className="text-sky-500"> {selectedData.length > 0 ? selectedData[0].name : "Category"}</span></h2>
 
-            <div className="md:grid grid-cols-2 pt-28">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-28">
                 {
                     selectedData?.map((item) =>
-                        <div key={item._id}>
-                            <SingleCart
-                                item={item}
-                            ></SingleCart>
-                        </div>
+                        <SingleCart
+                            key={item._id}
+                            item={item}
+                        ></SingleCart>
                     )
                 }
             </div>
