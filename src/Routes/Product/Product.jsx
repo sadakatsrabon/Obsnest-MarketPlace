@@ -1,5 +1,4 @@
 
-
 import { useParams } from "react-router-dom";
 import useData from "../../components/Hooks/useData";
 import { useEffect, useState } from "react";
@@ -9,7 +8,7 @@ const Product = () => {
     const [selectedData, setSelectedData] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const data = useData()
+    const data = useData();
     const allDatas = data[0];
     // console.log(allDatas);
 

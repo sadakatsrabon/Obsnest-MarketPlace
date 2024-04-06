@@ -38,8 +38,8 @@ const CartSwiper = ({ category }) => {
                 category.data.map(((item) =>
                     <div className='' key={item._id}>
                         <SwiperSlide>
-                            <Link to={`product/product-details/${item._id}`} className="card hover:scale-110 duration-75 w-96 bg-base-100 shadow-xl">
-                                <figure className="px-10 pt-10">
+                            <Link to={`product/product-details/${item._id}`} className="card w-96 bg-base-100 shadow-xl">
+                                <figure className="px-10 pt-10 hover:scale-110 duration-75 ">
                                     <img src={item.img} alt="Shoes" className="rounded-xl" />
                                 </figure>
                                 <div className="card-body items-center text-center">
