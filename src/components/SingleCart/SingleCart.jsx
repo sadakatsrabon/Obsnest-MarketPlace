@@ -19,8 +19,8 @@ const SingleCart = ({ item, isLoading }) => {
                 <div>
                     <p className="text-center font-bold">Category: {category}</p>
                     <div className="card card-side bg-base-100 shadow-xl">
-                        <Link to={`product/product-details/${item._id}`}>
-                            <figure><img className="w-96 " src={img} alt="Movie" /></figure>
+                        <Link to={`/product/product-details/${item._id}`}>
+                            <figure><img className="w-96 hover:scale-110 duration-75" src={img} alt="Movie" /></figure>
                         </Link>
                         <div className="card-body">
                             <h2 className="card-title text-2xl">{name}</h2>

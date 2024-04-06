@@ -1,8 +1,4 @@
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css/pagination';
-// import './styles.css';
-// import { Pagination } from 'swiper/modules';
-// import { Link } from 'react-router-dom';
+
 
 import { Link } from "react-router-dom";
 import CartSwiper from "./CartSwiper/CartSwiper";
@@ -36,7 +32,6 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
 
                         <div className='text-end'>
                             <Link to={`product/${category.title}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link>
-                            {/* <Link to={`product/${category}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link> */}
                         </div>
                     </div>)
             }
