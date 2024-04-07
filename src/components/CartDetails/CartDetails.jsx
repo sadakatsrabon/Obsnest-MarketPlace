@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const CartDetails = ({ item, isLoadig }) => {
 
     if (isLoadig) {
@@ -29,6 +27,7 @@ const CartDetails = ({ item, isLoadig }) => {
 
                 </div>
                 <div className="card-actions md:mt-20 mb-8 justify-center pt-5 pr-6">
+                    {/* ToDo: Need to setup add to cart dynamicly */}
                     <button className="btn bg-yellow-400 w-52 text-black">Add To Cart</button>
                 </div>
             </div>
