@@ -3,6 +3,7 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 import useData from "../../../components/Hooks/useData";
+// import Category from "../../../components/Category/Category";
 import Category from "../../../components/Category/Category";
 
 const HomeMain = () => {

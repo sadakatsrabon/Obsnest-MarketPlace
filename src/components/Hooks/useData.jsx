@@ -7,7 +7,7 @@ const useData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/productsData.json');
+                const response = await fetch('http://localhost:5000/data');
                 const jsonData = await response.json();
                 setData(jsonData);
                 setLoading(false);
@@ -25,8 +25,3 @@ const useData = () => {
 };
 
 export default useData;
-
-
-
-
-
