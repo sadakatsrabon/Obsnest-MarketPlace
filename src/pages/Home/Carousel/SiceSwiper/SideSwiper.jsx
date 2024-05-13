@@ -1,27 +1,32 @@
+import banner1 from '../../../../assets/bannerCarousel/sideBanner1.jpg'
+import banner2 from '../../../../assets/bannerCarousel/sideBanner2.jpg'
+import banner3 from '../../../../assets/bannerCarousel/sideBanner3.jpg'
+import banner4 from '../../../../assets/bannerCarousel/sideBanner4.jpg'
+import banner5 from '../../../../assets/bannerCarousel/sideBanner5.jpg'
 
 const SideSwiper = () => {
     return (
         <div className="h-96 carousel-vertical m-auto rounded-2xl">
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner1} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner2} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner3} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner4} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner5} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner3} />
                     </div>
-                    <div className="h-full">
-                        <img className="mx-auto" src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" />
+                    <div className="my-2">
+                        <img className="mx-auto" src={banner1} />
                     </div>
                 </div>
     );

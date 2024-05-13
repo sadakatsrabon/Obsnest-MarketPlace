@@ -10,7 +10,7 @@ const useData = () => {
                 const response = await fetch('https://obsnest-server.vercel.app/menudata');
                 const jsonData = await response.json();
                 setData(jsonData);
-                console.log(jsonData, "jasohfiasijfdjhjhi")
+                // console.log(jsonData, "jasohfiasijfdjhjhi")      
                 setLoading(false);
             } catch (error) {
                 console.error('Error in fetching data:', error);
