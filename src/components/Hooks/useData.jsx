@@ -7,12 +7,13 @@ const useData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/data');
+                const response = await fetch('https://obsnest-server.vercel.app/menudata');
                 const jsonData = await response.json();
                 setData(jsonData);
+                console.log(jsonData, "jasohfiasijfdjhjhi")
                 setLoading(false);
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Error in fetching data:', error);
                 setLoading(false);
             }
         };
