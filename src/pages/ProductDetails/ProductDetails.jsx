@@ -8,7 +8,7 @@ const ProductDetails = () => {
     const { _id } = useParams();
     const [loadedProduct, isLoading] = useData();
     // console.log(isLoading);
-
+    
     useEffect(() => {
         if (loadedProduct && loadedProduct.length > 0) {
             const selectedProduct = loadedProduct.find(item => item._id == _id);
