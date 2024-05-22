@@ -17,6 +17,7 @@ const Login = () => {
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 </div>
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    {/* FORM */}
                     <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                                 <span className="label-text">Email</span>
