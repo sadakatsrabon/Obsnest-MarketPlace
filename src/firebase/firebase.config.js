@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAemRm3MmipTNIMlXE78uiH3-oGUf106_A",
-  authDomain: "obsnest-market.firebaseapp.com",
-  projectId: "obsnest-market",
-  storageBucket: "obsnest-market.appspot.com",
-  messagingSenderId: "102165943590",
-  appId: "1:102165943590:web:5ce4ebb08bef532656dde7"
+  
+  
+  
+  
+  
+  
 };
 
 // Initialize Firebase
