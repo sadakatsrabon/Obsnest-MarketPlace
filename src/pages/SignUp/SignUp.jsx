@@ -1,5 +1,9 @@
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
+
+    const { createUser } = useContext(AuthContext)
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -8,6 +12,13 @@ const SignUp = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(name, email, password);
+
+        // Create User
+        createUser(email, password)
+        .then(result =>{
+            const user= result.user;
+            console.log(user);
+        })
     }
 
     return (
@@ -19,7 +30,7 @@ const SignUp = () => {
                 </div>
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     {/* FORM */}
-                    <form onSubmit={handleSignUp    } className="card-body">
+                    <form onSubmit={handleSignUp} className="card-body">
                         <div className="form-control">
                             <span className="label-text">Name</span>
                             <input name="name" type="name" placeholder="name" className="input input-bordered" required />
