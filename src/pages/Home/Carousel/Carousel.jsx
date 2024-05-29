@@ -4,13 +4,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
-
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import img from "../../../assets/img.jpg"
 
 
 const Carousel = () => {
+
     return (
         <div className=''>
             <div className=''>
