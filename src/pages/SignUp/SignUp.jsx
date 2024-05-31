@@ -20,6 +20,7 @@ const SignUp = () => {
                 const createdUser = result.user;
                 console.log(createdUser);
 
+                // SignUp Alart
                 let timerInterval;
                 Swal.fire({
                     title: "Auto close alert!",
