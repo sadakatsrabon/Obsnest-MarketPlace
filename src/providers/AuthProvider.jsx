@@ -1,5 +1,5 @@
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { createContext, useState } from "react";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
@@ -8,10 +8,10 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
-    const [loadig, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     // Create user mechanism
-    const CreateUser = (email, password) => {
+    const createUser = (email, password) => {
         // toTry: We can comment the setLoading for check.
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
@@ -29,11 +29,19 @@ const AuthProvider = ({ children }) => {
         return (auth, signOut);
     };
 
+    // Listening auth state change
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+            setLoading(false)
+        });
+        return () => unSubscribe();
+    }, [])
     // Return all:
     const authInfo = {
         user,
-        loadig,
-        CreateUser,
+        loading,
+        createUser,
         login,
         logOut,
     };
