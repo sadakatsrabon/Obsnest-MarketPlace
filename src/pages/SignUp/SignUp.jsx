@@ -1,10 +1,16 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
 
     const { createUser } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const home = location?.state?.form?.pathname || '/';
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -23,8 +29,8 @@ const SignUp = () => {
                 // SignUp Alart
                 let timerInterval;
                 Swal.fire({
-                    title: "Auto close alert!",
-                    html: "I will close in <b></b> milliseconds.",
+                    title: "Welcome to OBSNEST Family",
+                    html: "You are the valuable one in OBSNEST World",
                     timer: 2000,
                     timerProgressBar: true,
                     didOpen: () => {
@@ -43,6 +49,9 @@ const SignUp = () => {
                         console.log("I was closed by the timer");
                     }
                 });
+
+                // Navigete to Home
+                navigate(home, { replace: true })
             })
     }
 

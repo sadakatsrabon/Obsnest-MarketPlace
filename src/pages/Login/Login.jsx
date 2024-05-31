@@ -1,11 +1,17 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
 
     const { login } = useContext(AuthContext)
+
+    const navigate = useNavigate();
+    const location = useLocation;
+
+    const home = location?.state?.form?.pathname || '/';
 
     const handleLogin = event => {
         event.preventDefault();
@@ -22,8 +28,8 @@ const Login = () => {
                 // Login Alart
                 let timerInterval;
                 Swal.fire({
-                    title: "Auto close alert!",
-                    html: "I will close in <b></b> milliseconds.",
+                    title: "Please Wait sir",
+                    html: "Your login Process is succesfull",
                     timer: 2000,
                     timerProgressBar: true,
                     didOpen: () => {
@@ -42,6 +48,9 @@ const Login = () => {
                         console.log("I was closed by the timer");
                     }
                 });
+
+                // navigete to home
+                navigate(home, { replace: true })
             })
     }
 
