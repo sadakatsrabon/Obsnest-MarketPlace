@@ -9,6 +9,10 @@ const CartDetails = ({ item, isLoadig }) => {
     }
 
     const { img, name, brandName, description, color, deliveryStatus, price, offerStatus } = item;
+    const handleAddToCart = item => {
+        console.log(item);
+    }
+
     return (
         <div>
             <div className="md:flex">
@@ -21,14 +25,15 @@ const CartDetails = ({ item, isLoadig }) => {
                     <p>Color: {color}</p>
                     <p>Delivery Charge: {deliveryStatus}</p>
                     <div className="flex">
-                        <p className="text-yellow-800 font-semibold">Price: {price}</p>
+                        <p className="text-yellow-800 handleAddToCartfont-semibold">Price: {price}</p>
                         <p>Offer Status: {offerStatus}</p>
                     </div>
 
                 </div>
                 <div className="card-actions md:mt-20 mb-8 justify-center pt-5 pr-6">
                     {/* ToDo: Need to setup add to cart dynamicly */}
-                    <button className="btn bg-yellow-400 w-52 text-black">Add To Cart</button>
+                    <input onSubmit={handleAddToCart} className="btn bg-yellow-400 w-52 text-black" type="submit" value="Add To Cart" />
+                    {/* <button className="btn bg-yellow-400 w-52 text-black">Add To Cart</button> */}
                 </div>
             </div>
         </div>
