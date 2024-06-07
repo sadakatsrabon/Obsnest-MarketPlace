@@ -31,7 +31,7 @@ const Product = () => {
     }, [allDatas, selectedCategory]);
 
     useEffect(() => {
-        console.log(selectedData);
+        // console.log(selectedData);
     }, [selectedData]);
 
     if (loading) {
