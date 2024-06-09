@@ -2,43 +2,51 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const CartDetails = ({ item, isLoading }) => {
-
     const { user } = useContext(AuthContext);
 
     if (isLoading) {
-        return <p>Loading ...</p>
+        return <p>Loading...</p>;
     }
 
     if (!item) {
-        return <p>Nothing to show Due to loadign error</p>
+        return <p>Nothing to show due to loading error</p>;
     }
+
     const { _id, img, name, brandName, description, color, deliveryStatus, price, offerStatus } = item;
 
     // Add Cart Handler
-    const handleAddToCart = item => {
+    const handleAddToCart = () => {
         console.log(item);
+        // To do: If User not in login, redirect in login page: and if user is not in login- he can not add product in cart
         if (user) {
-            const selectedItem = { selectedId: _id }
+            const selectedItem = { selectedId: _id };
             fetch('https://obsnest-server.vercel.app/carts', {
                 method: 'POST',
                 headers: {
-                    'content-type': 'application/json'
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(selectedItem)
             })
-                .then(res => res.json)
+                .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
-                        console.log("Added New date")
+                        console.log("Added new item");
+                    } else {
+                        console.error("Failed to add item");
                     }
                 })
-        } else (console.log("Somthing went wrong. Please login first"))
-    }
+                .catch(error => console.error("Error adding item:", error));
+        } else {
+            console.log("Something went wrong. Please login first");
+        }
+    };
 
     return (
         <div>
             <div className="md:flex">
-                <figure><img className="w-[700px] p-4 rounded-3xl" src={img} alt="Movie" /></figure>
+                <figure>
+                    <img className="w-[700px] p-4 rounded-3xl" src={img} alt={name} />
+                </figure>
                 <div className="card-body">
                     <h2 className="card-title text-2xl">{name}</h2>
                     <p>By {brandName}</p>
@@ -47,15 +55,12 @@ const CartDetails = ({ item, isLoading }) => {
                     <p>Color: {color}</p>
                     <p>Delivery Charge: {deliveryStatus}</p>
                     <div className="flex">
-                        <p className="text-yellow-800 handleAddToCartfont-semibold">Price: {price}</p>
+                        <p className="text-yellow-800 font-semibold">Price: {price}</p>
                         <p>Offer Status: {offerStatus}</p>
                     </div>
-
                 </div>
                 <div className="card-actions md:mt-20 mb-8 justify-center pt-5 pr-6">
-                    {/* ToDo: Need to setup add to cart dynamicly */}
-                    <input onClick={handleAddToCart} className="btn bg-yellow-400 w-52 text-black" type="submit" value="Add To Cart" />
-                    {/* <button onClick={handleAddToCart} className="btn w-52 text-black">Add To Cart</button> */}
+                    <input onClick={handleAddToCart} className="btn bg-yellow-400 w-52 text-black" type="button" value="Add To Cart" />
                 </div>
             </div>
         </div>
