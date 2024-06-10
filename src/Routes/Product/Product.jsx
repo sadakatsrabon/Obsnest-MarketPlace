@@ -1,6 +1,6 @@
 
 import { useParams } from "react-router-dom";
-import useData from "../../components/Hooks/useData";
+import useData from "../../components/hooks/useData";
 import { useEffect, useState } from "react";
 import SingleCart from "../../components/SingleCart/SingleCart";
 
