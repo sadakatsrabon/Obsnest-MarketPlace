@@ -18,8 +18,8 @@ const CartDetails = ({ item, isLoading }) => {
     const handleAddToCart = () => {
         console.log(item);
         // To do: If User not in login, redirect in login page: and if user is not in login- he can not add product in cart
-        if (user) {
-            const selectedItem = { selectedId: _id };
+        if (user && user.email) {
+            const selectedItem = { selectedId: _id, name, img, brandName, description, color, deliveryStatus, price, offerStatus, email: user.email };
             fetch('https://obsnest-server.vercel.app/carts', {
                 method: 'POST',
                 headers: {
@@ -30,8 +30,10 @@ const CartDetails = ({ item, isLoading }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
+                        // toDo : need to add confirmation swal
                         console.log("Added new item");
                     } else {
+                        // toDo : need to added a decline showing message by swal
                         console.error("Failed to add item");
                     }
                 })
