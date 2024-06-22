@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg"
+import useCart from "../components/hooks/useCart";
 
 const NavMenu = () => {
+    const [cart] = useCart();
+    console.log(cart, "No need booolean")
     const navOptions =
         <>
             <li>
@@ -9,6 +12,9 @@ const NavMenu = () => {
             </li>
             <li>
                 <Link to='dashboard'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link>
+            </li>
+            <li>
+                <Link to="/dashboard"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
             </li>
             <li>
                 <Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>

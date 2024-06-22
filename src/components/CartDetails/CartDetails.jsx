@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import useCart from "../hooks/useCart";
 
 const CartDetails = ({ item, isLoading }) => {
     const { user } = useContext(AuthContext);
+    const [, refetch] = useCart();
 
     if (isLoading) {
         return <p>Loading...</p>;
@@ -30,6 +32,7 @@ const CartDetails = ({ item, isLoading }) => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.insertedId) {
+                        refetch();
                         // toDo : need to add confirmation swal
                         console.log("Added new item");
                     } else {
