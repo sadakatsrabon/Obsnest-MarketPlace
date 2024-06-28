@@ -6,6 +6,7 @@ const Dashoard = () => {
             {/* Drawer */}
             <div className="">
                 <div className="drawer drawer-end">
+                    <h2>Need to updata Drawar</h2>
                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
                         {/* Page content here */}
