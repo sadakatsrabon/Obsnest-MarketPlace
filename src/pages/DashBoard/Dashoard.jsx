@@ -15,11 +15,11 @@ const Dashoard = () => {
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                             {/* Sidebar content here */}
+                            <li><a href="/"></a>Home</li>
+                            <div className="divider"></div>
                             <li><a>Admin Home</a></li>
                             <li><a>User Home</a></li>
                             <li><a>My Cart</a></li>
-                            <div className="divider"></div>
-                            
                         </ul>
                     </div>
                 </div>
