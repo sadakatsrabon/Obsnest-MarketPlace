@@ -5,7 +5,8 @@ import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
 import ProductDetails from '../pages/ProductDetails/ProductDetails';
 import Product from './Product/Product';
-import Dashoard from '../pages/DashBoard/Dashoard';
+import DashboardLayout from '../Layout/DashboardLayout';
+import MyCart from '../pages/DashBoard/dashboardPage/MyCart';
 
 const router = createBrowserRouter([
   {
@@ -32,12 +33,19 @@ const router = createBrowserRouter([
         path: 'product/product-details/:_id',
         element: <ProductDetails />
       },
-      {
-        path: 'dashboard',
-        element: <Dashoard />
-      }
     ]
   },
+  // dashboardRoutes
+  {
+    path: 'dashboard',
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: 'mycart',
+        element: <MyCart></MyCart>
+      }
+    ]
+  }
 ]);
 
 export default router;

@@ -14,7 +14,7 @@ const NavMenu = () => {
                 <Link to='dashboard'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link>
             </li>
             <li>
-                <Link to="/dashboard"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
+                <Link to="/dashboard/mycart"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
             </li>
             <li>
                 <Link to="/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
