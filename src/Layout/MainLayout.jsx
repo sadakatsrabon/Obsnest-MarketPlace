@@ -6,14 +6,14 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 const MainLayout = () => {
     return (
-        <div className="">
-            <div>
+        <div className="lg:grid grid-cols-2">
+            <div className="w-1/3" >
                 <Sidebar></Sidebar>
             </div>
-            <div>
-            <NavMenu></NavMenu>
-            <Outlet></Outlet>
-            <Footer></Footer>
+            <div className="w-full">
+                <NavMenu></NavMenu>
+                <Outlet></Outlet>
+                <Footer></Footer>
             </div>
         </div>
     );
