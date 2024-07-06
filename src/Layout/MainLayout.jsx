@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import NavMenu from "../Shared/NavMenu";
 import Footer from "../Shared/Footer";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -6,13 +5,10 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 const MainLayout = () => {
     return (
-        <div className="lg:grid grid-cols-2">
-            <div className="w-1/3" >
-                <Sidebar></Sidebar>
-            </div>
-            <div className="w-full">
+        <div className="">
+            <div className="" >
                 <NavMenu></NavMenu>
-                <Outlet></Outlet>
+                <Sidebar></Sidebar>
                 <Footer></Footer>
             </div>
         </div>
