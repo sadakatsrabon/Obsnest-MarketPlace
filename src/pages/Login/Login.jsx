@@ -71,7 +71,7 @@ const Login = () => {
                         <div className="form-control">
                             <span className="label-text">Password</span>
                             <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                            <a href="/signup" className="label-text-alt link link-hover">Create New Account ?</a>
+                            <a href="signup" className="label-text-alt link link-hover">Create New Account ?</a>
                         </div>
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="Login" />

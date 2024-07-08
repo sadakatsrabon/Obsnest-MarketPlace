@@ -7,6 +7,7 @@ import ProductDetails from '../pages/ProductDetails/ProductDetails';
 import Product from './Product/Product';
 import DashboardLayout from '../Layout/DashboardLayout';
 import MyCart from '../pages/DashBoard/dashboardPage/MyCart';
+import LoginLayout from '../Layout/LoginLayout';
 
 const router = createBrowserRouter([
   {
@@ -16,14 +17,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomeMain />
-      },
-      {
-        path: 'login',
-        element: <Login />
-      },
-      {
-        path: 'signup',
-        element: <SignUp />
       },
       {
         path: `product/:category`,
@@ -44,6 +37,21 @@ const router = createBrowserRouter([
         path: 'mycart',
         element: <MyCart></MyCart>
       }
+    ]
+  },
+  // Login/SignUp Routes
+  {
+    path: 'nest',
+    element: <LoginLayout></LoginLayout>,
+    children: [
+      {
+        path: 'login',
+        element: <Login />
+      },
+      {
+        path: 'signup',
+        element: <SignUp />
+      },
     ]
   }
 ]);
