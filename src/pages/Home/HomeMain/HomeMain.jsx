@@ -3,7 +3,6 @@ import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import Carousel from "../Carousel/Carousel";
 import SideSwiper from "../Carousel/SiceSwiper/SideSwiper";
 import useData from "../../../components/hooks/useData";
-// import Category from "../../../components/Category/Category";
 import Category from "../../../components/Category/Category";
 
 const HomeMain = () => {
@@ -15,6 +14,9 @@ const HomeMain = () => {
     const electronic = loadedData.filter(item => item.category === 'electronic');
     const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
     // console.log([loadedData], "console.log")
+
+  
+
 
     if (isLoading) {
         return <p className="pt-20 text-2xl">Loading ...</p>
@@ -47,6 +49,7 @@ const HomeMain = () => {
                     electronic={electronic}
                     fashion_beauty={fashion_beauty}
                 ></Category>
+
             </div>
         </div>
     );
