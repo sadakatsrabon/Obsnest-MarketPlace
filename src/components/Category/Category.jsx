@@ -12,7 +12,7 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
         { title: "Kitchen", data: kitchen },
         { title: "Plastic", data: plastic },
         { title: "Electronic", data: electronic },
-        { title: "Fashion & Beauty", data: fashion_beauty }
+        { title: "Fashion_Beauty", data: fashion_beauty }
     ];
 
     const randomlyGenerateKey = () => {

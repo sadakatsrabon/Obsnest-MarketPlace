@@ -18,7 +18,7 @@ const Sidebar = () => {
         { title: "Kitchen", data: kitchen },
         { title: "Plastic", data: plastic },
         { title: "Electronic", data: electronic },
-        { title: "Fashion & Beauty", data: fashion_beauty }
+        { title: "Fashion_Beauty", data: fashion_beauty }
     ]
 
     return (
@@ -34,7 +34,7 @@ const Sidebar = () => {
                     {/* Content here */}
                     <div className="pt-20">
                         {
-                            categories.map((category) => <Link to={`product/${category.title}`} key={category.title}><li className="p-1 ml-4">{category.title}</li></Link>)
+                            categories.map((category) => <Link to={`product/${category.title}`} key={category.title}><li className="p-1 ml-4 hover:bg-slate-300 rounded-lg">{category.title}</li></Link>)
                         }
 
                         <div className="divider"></div>
