@@ -25,8 +25,8 @@ const Sidebar = () => {
         <div className="drawer lg:drawer-open">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
+                <label htmlFor="my-drawer" className="btn lg:hidden bg-sky-300 rounded-full fixed z-20 mt-16 drawer-button">{">"}</label>
                 <Outlet></Outlet>
-                <label htmlFor="my-drawer" className="btn lg:hidden btn-primary drawer-button">Open drawer</label>
             </div>
             <div className="drawer-side z-20">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>

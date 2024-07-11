@@ -16,11 +16,12 @@
     /* font-size: 18px; */
 
     /* Center slide text vertically */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    
-    
+    /* display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); */
+
   }
 
   .swiper-slide img {

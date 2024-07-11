@@ -22,7 +22,7 @@ const NavMenu = () => {
             <div className="navbar-start">
 
                 <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                    <label tabIndex={0} className="btn btn-ghost sm:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-900 bg-opacity-80 rounded-box w-52">
@@ -32,10 +32,10 @@ const NavMenu = () => {
                     </ul>
                 </div>
                 <Link to="/"><img className='w-10 rounded-lg' src={logo} alt="logo" /></Link>
-                <input className="px-8 py-2 ml-20 rounded-3xl text-black text-center" type="text" name="" placeholder="Type to search your product" id="" />
+                <input className="px-8 py-2 ml-20 w-40 sm:w-96 rounded-3xl text-black text-center" type="text" name="" placeholder="Type to search your product" id="" />
             </div>
 
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden sm:flex">
 
                 <ul className="menu menu-horizontal px-1">
                     {navOptions}
