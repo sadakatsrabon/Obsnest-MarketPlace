@@ -28,7 +28,7 @@ const Sidebar = () => {
                 <Outlet></Outlet>
                 <label htmlFor="my-drawer" className="btn lg:hidden btn-primary drawer-button">Open drawer</label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side z-20">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                 <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
                     {/* Content here */}

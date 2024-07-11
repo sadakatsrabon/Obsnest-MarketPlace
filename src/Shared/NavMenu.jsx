@@ -18,7 +18,7 @@ const NavMenu = () => {
             </li>
         </>
     return (
-        <div className="navbar h-1 fixed z-10 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
+        <div className="navbar h-1 fixed z-30 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
             <div className="navbar-start">
 
                 <div className="dropdown">
