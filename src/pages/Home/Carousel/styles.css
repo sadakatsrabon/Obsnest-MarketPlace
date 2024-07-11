@@ -16,7 +16,7 @@
     /* font-size: 18px; */
 
     /* Center slide text vertically */
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     /* display: grid;
