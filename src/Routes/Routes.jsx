@@ -4,10 +4,11 @@ import MainLayout from '../Layout/MainLayout';
 import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
 import ProductDetails from '../pages/ProductDetails/ProductDetails';
-import Product from './Product/Product';
 import DashboardLayout from '../Layout/DashboardLayout';
 import MyCart from '../pages/DashBoard/dashboardPage/MyCart';
 import LoginLayout from '../Layout/LoginLayout';
+import Product from '../pages/Product/Product';
+import ObsnestSecret from './ObsnestSecret';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
   // dashboardRoutes
   {
     path: 'dashboard',
-    element: <DashboardLayout></DashboardLayout>,
+    element: <ObsnestSecret><DashboardLayout></DashboardLayout></ObsnestSecret>,
     children: [
       {
         path: 'mycart',
