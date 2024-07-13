@@ -10,7 +10,7 @@ const CartSwiper = ({ category }) => {
         <div className=''>
             <Swiper
                 slidesPerView={1}
-                spaceBetween={10}
+                // spaceBetween={10}
                 pagination={{
                     clickable: true,
                 }}
@@ -40,17 +40,17 @@ const CartSwiper = ({ category }) => {
                         <div key={item._id}>
                             <SwiperSlide>
                                 <Link to={`product/product-details/${item._id}`} className="card w-96 bg-base-100 shadow-xl">
-                                    <figure className="px-10 pt-10 hover:scale-110 duration-75 ">
+                                    <figure className="px-2 pt-4 hover:scale-110 duration-75 ">
                                         <img src={item.img} alt="Shoes" className="rounded-xl" />
                                     </figure>
-                                    <div className="card-body items-center text-center">
-                                        <h2 className="card-title">{item.name}</h2>
+                                    <div className="card-body items-center text-center p-1">
+                                        <h2 className="card-title pt-1">{item.name}</h2>
                                         <p>{item.description}</p>
                                         <div className='divider w-1/2 mx-auto my-0'></div>
                                         <p>${item.price}</p>
                                         <div className='gap-2'>
                                             <p className='w-full px-4 border-2 border-orange-600 rounded-lg text-orange-600'>DeliveryC. {item.deliveryStatus}</p>
-                                            <p className='w-full px-4 border-2 bg-sky-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
+                                            <p className='w-full px-4 border-2 bg-green-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
                                         </div>
                                     </div>
                                 </Link>
