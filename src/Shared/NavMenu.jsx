@@ -4,7 +4,7 @@ import useCart from "../components/hooks/useCart";
 
 const NavMenu = () => {
     const [cart] = useCart();
-    console.log(cart, "No need booolean")
+    console.log([cart], "No need booolean")
     const navOptions =
         <>
             <li>
@@ -13,9 +13,14 @@ const NavMenu = () => {
             <li>
                 <Link to="/dashboard/mycart"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
             </li>
-            <li>
-                <Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
-            </li>
+            <div>
+                <li>
+                    <Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
+                </li>
+                <li>
+                    <Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
+                </li>
+            </div>
         </>
     return (
         <div className="navbar h-1 fixed z-30 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
