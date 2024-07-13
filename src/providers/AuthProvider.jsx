@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
 
@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
     // LogOut mechanism:
     const logOut = () => {
         setLoading(true);
-        return (auth, signOut);
+        return auth.signOut();
     };
 
     // Listening auth state change

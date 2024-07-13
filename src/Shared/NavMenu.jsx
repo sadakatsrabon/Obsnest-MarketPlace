@@ -1,27 +1,39 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg"
 import useCart from "../components/hooks/useCart";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const NavMenu = () => {
+    const { user, logOut } = useContext(AuthContext)
+
     const [cart] = useCart();
-    console.log([cart], "No need booolean")
+
+    const handleLogOut = async () => {
+        await logOut()
+        // .then(() => { })
+        // .catch(error => console.error(error))
+    };
     const navOptions =
-        <>
-            <li>
-                <Link to='dashboard'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link>
-            </li>
-            <li>
-                <Link to="/dashboard/mycart"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
-            </li>
-            <div>
+        <div className="flex">
+            <div className="sm:flex">
                 <li>
-                    <Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
+                    <Link to='dashboard'><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Dashboard</button></Link>
                 </li>
                 <li>
-                    <Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link>
+                    <Link to="/dashboard/mycart"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>--{cart?.length || 0}--</button></Link>
                 </li>
             </div>
-        </>
+            <div className="text-end">
+                {
+                    user ? <>
+                        <li><button onClick={handleLogOut} className='btn btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Log Out</button></li>
+                    </> : <>
+                        <li><Link to="nest/login"><button className='btn-outline text-white bg-black p-2 bg-opacity-40 uppercase font-semibold rounded-md'>Login</button></Link></li>
+                    </>
+                }
+            </div>
+        </div>
     return (
         <div className="navbar h-1 fixed z-30 max-w-screen-2xl bg-opacity-30 md:bg-opacity-100 bg-black text-white">
             <div className="navbar-start">

@@ -50,7 +50,7 @@ const CartSwiper = ({ category }) => {
                                         <p>${item.price}</p>
                                         <div className='gap-2'>
                                             <p className='w-full px-4 border-2 border-orange-600 rounded-lg text-orange-600'>DeliveryC. {item.deliveryStatus}</p>
-                                            <p className='w-full px-4 border-2 bg-green-500 text-white rounded-lg'>{item.offerStatus}$ Discount</p>
+                                            <p className='w-full px-4 border-2 border-sky-500 text-sky-500 rounded-lg'>{item.offerStatus}$ Discount</p>
                                         </div>
                                     </div>
                                 </Link>

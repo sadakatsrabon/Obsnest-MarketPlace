@@ -30,13 +30,13 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
                             className="text-center mt-10 border-b-4">
                             <h2 className="text-4xl font-semibold">{category.title}</h2>
 
-                            <div className="bg-sky-100 p-2">
+                            <div className="bg-sky-200 p-2 pr-0">
                                 <CartSwiper
                                     category={category}
                                 ></CartSwiper>
                             </div>
 
-                            <div className='text-end'>
+                            <div className=''>
                                 <Link to={`product/${category.title}`} className='btn btn-outline rounded-full text-3xl text-black'>{">"}</Link>
                             </div>
                         </div>
