@@ -80,7 +80,7 @@ const SignUp = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <a href="/login" className="label-text-alt link link-hover">Already Have An Account ?</a>
+                            <a href="/nest/login" className="label-text-alt link link-hover">Already Have An Account ?</a>
                         </div>
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="SignUp" />

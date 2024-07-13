@@ -5,11 +5,12 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+    // console.log(logError);
 
     const { login } = useContext(AuthContext)
 
     const navigate = useNavigate();
-    const location = useLocation;
+    const location = useLocation();
 
     const home = location?.state?.form?.pathname || '/';
 
@@ -18,12 +19,11 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
 
         login(email, password)
             .then(result => {
-                const login = result.user;
-                console.log(login)
+                const loggedUser = result.user;
+                console.log(loggedUser)
 
                 // Login Alart
                 let timerInterval;
@@ -45,13 +45,17 @@ const Login = () => {
                 }).then((result) => {
                     /* Read more about handling dismissals below */
                     if (result.dismiss === Swal.DismissReason.timer) {
-                        console.log("I was closed by the timer");
+                        console.log("Ii was closed by the timer");
                     }
                 });
 
                 // navigete to home
                 navigate(home, { replace: true })
             })
+            .catch(() => {
+                Swal.fire ("Please Create An Account");
+                navigate('/nest/signup')
+            });
     }
 
     return (
