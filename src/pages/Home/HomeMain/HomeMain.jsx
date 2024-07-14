@@ -15,11 +15,20 @@ const HomeMain = () => {
     const fashion_beauty = loadedData.filter(item => item.category === 'fashion_beauty')
     // console.log([loadedData], "console.log")
 
-  
+
 
 
     if (isLoading) {
-        return <p className="pt-20 text-2xl">Loading ...</p>
+        return <div className='text-center mt-40'>
+            <span className="loading loading-spinner w-10 text-secondary"></span>
+            <span className="loading loading-spinner w-10 text-accent"></span>
+            <span className="loading loading-spinner w-10 text-primary"></span>
+            <span className="loading loading-spinner w-10 text-neutral"></span>
+            <span className="loading loading-spinner w-10 text-info"></span>
+            <span className="loading loading-spinner w-10 text-success"></span>
+            <span className="loading loading-spinner w-10 text-warning"></span>
+            <span className="loading loading-spinner w-10 text-error"></span>
+        </div>
     }
 
     return (
