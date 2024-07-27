@@ -15,18 +15,16 @@ const Category = ({ smart, kitchen, plastic, electronic, fashion_beauty }) => {
         { title: "Fashion_Beauty", data: fashion_beauty }
     ];
 
-    const randomlyGenerateKey = () => {
-        return Math.floor(Math.random() * 1000000); // Adjust the range as needed
-    };
+    // const randomlyGenerateKey = () => {
+    //     return Math.floor(Math.random() * 1000000); // Adjust the range as needed
+    // };
 
     return (
         <div>
             {
                 categories?.map((category) => {
-                    const randomKey = randomlyGenerateKey();
-                    // console.log(category)
                     return (
-                        <div key={randomKey}
+                        <div key={category.title}
                             className="text-center mt-10 border-b-4">
                             <h2 className="text-4xl font-semibold">{category.title}</h2>
 
