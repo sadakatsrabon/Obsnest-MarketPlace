@@ -23,6 +23,8 @@ const DashboardLayout = () => {
                             <li><Link>User Home</Link></li>
                             <li><Link to='mycart'>My Cart</Link></li>
                             <li><Link>Payment History</Link></li>
+                            <div className="divider"></div>
+                            <li><Link>Menu</Link></li>
                         </ul>
                     </div>
                 </div>

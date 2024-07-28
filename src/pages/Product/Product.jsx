@@ -39,7 +39,7 @@ const Product = () => {
 
     return (
         <div className='pt-20'>
-            <h2 className='text-3xl font-extrabold text-center'>Showing OBSNEST Data By Caegory :<span className="text-sky-500"> {selectedData.length > 0 ? selectedData[0].name : "Category"}</span></h2>
+            <h2 className='text-3xl font-extrabold text-center'>Showing OBSNEST Data By Caegory :<span className="text-sky-500"> {selectedData.length > 0 ? selectedData[0].category : "Category"}</span></h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-28">
                 {
