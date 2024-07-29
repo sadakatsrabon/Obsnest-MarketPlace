@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import useCart from "../hooks/useCart";
+import Swal from "sweetalert2";
 
 const CartDetails = ({ item, isLoading }) => {
     const { user } = useContext(AuthContext);
-    const [, refetch] = useCart();
+    const [, , refetch] = useCart();
 
     if (isLoading) {
         return <p>Loading...</p>;
@@ -33,7 +34,13 @@ const CartDetails = ({ item, isLoading }) => {
                 .then(data => {
                     if (data.insertedId) {
                         refetch();
-                        // toDo : need to add confirmation swal
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: "Your work has been saved",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
                         console.log("Added new item");
                     } else {
                         // toDo : need to added a decline showing message by swal
