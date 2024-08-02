@@ -26,34 +26,55 @@ const SignUp = () => {
                 const createdUser = result.user;
                 console.log(createdUser);
 
-                // SignUp Alart
-                let timerInterval;
-                Swal.fire({
-                    title: "Welcome to OBSNEST Family",
-                    html: "You are the valuable one in OBSNEST World",
-                    timer: 2000,
-                    timerProgressBar: true,
-                    didOpen: () => {
-                        Swal.showLoading();
-                        const timer = Swal.getPopup().querySelector("b");
-                        timerInterval = setInterval(() => {
-                            timer.textContent = `${Swal.getTimerLeft()}`;
-                        }, 100);
+                const savedUser = { name: name, email: email, password:password };
+                return fetch('https://obsnest-server.vercel.app/obsnestusers', {
+                    method: "POST",
+                    headers: {
+                        'content-Type': 'application/json'
                     },
-                    willClose: () => {
-                        clearInterval(timerInterval);
-                    }
-                }).then((result) => {
-                    /* Read more about handling dismissals below */
-                    if (result.dismiss === Swal.DismissReason.timer) {
-                        console.log("I was closed by the timer");
-                    }
+                    body: JSON.stringify(savedUser)
                 });
-
-                // Navigete to Home
-                navigate(home, { replace: true })
             })
-    }
+            .then(res => {
+                if (!res.ok) {
+                    return res.text().then(text => { throw new Error(text); });
+                }
+                return res.json();
+            })
+            .then(data => {
+                if (data.insertedId) {
+                    // SignUp Alert
+                    let timerInterval;
+                    Swal.fire({
+                        title: "Welcome to OBSNEST Family",
+                        html: "You are the valuable one in OBSNEST World",
+                        timer: 2000,
+                        timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading();
+                            const timer = Swal.getPopup().querySelector("b");
+                            timerInterval = setInterval(() => {
+                                timer.textContent = `${Swal.getTimerLeft()}`;
+                            }, 100);
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval);
+                        }
+                    }).then((result) => {
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log("I was closed by the timer");
+                        }
+                    });
+
+                    // Navigate to Home
+                    navigate(home, { replace: true });
+                }
+            })
+            .catch(error => {
+                console.error("Error during sign up or saving user:", error);
+            });
+    };
+
 
     return (
         <div className="hero min-h-screen bg-base-200">
