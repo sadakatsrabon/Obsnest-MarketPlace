@@ -8,12 +8,24 @@ const Login = () => {
     // console.log(logError);
 
     const { login } = useContext(AuthContext)
+    const { googleSignIn } = useContext(AuthContext);
 
     const navigate = useNavigate();
     const location = useLocation();
 
     const home = location?.state?.form?.pathname || '/';
 
+    // Google SignIn Method
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                const loggeduser = result.user;
+                // navigate(home, { replace: true })
+                console.log(loggeduser)
+            })
+    }
+
+    // Email And Password SignIn Method
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -53,7 +65,7 @@ const Login = () => {
                 navigate(home, { replace: true })
             })
             .catch(() => {
-                Swal.fire ("Please Create An Account");
+                Swal.fire("Please Create An Account");
                 navigate('/nest/signup')
             });
     }
@@ -79,6 +91,10 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="Login" />
+                        </div>
+                        <div className="text-center">
+                            <div className="divider">Social Loing</div>
+                            <button onClick={handleGoogleSignIn} className="btn btn-outline rounded-full text-xl">G</button>
                         </div>
                     </form>
                 </div>
