@@ -20,7 +20,7 @@ const Login = () => {
         googleSignIn()
             .then(result => {
                 const loggeduser = result.user;
-                // navigate(home, { replace: true })
+                navigate(home, { replace: true })
                 console.log(loggeduser)
             })
     }
