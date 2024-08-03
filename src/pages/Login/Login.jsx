@@ -20,8 +20,50 @@ const Login = () => {
         googleSignIn()
             .then(result => {
                 const loggeduser = result.user;
-                navigate(home, { replace: true })
+                const googleUser = { name: loggeduser.displayName, email: loggeduser.email, avatar: loggeduser.photoURL, token: loggeduser.accessToken };
                 console.log(loggeduser)
+                return fetch('https://obsnest-server.vercel.app/obsnestusers', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(googleUser)
+                });
+            })
+            .then(res => {
+                if (!res.ok) {
+                    return res.text().then(text => { throw new Error(text) });
+                }
+                return res.json();
+            })
+            .then(data => {
+                if (data.insertedId) {
+                    // Show a Swal after login succesfully
+                    let timerInterval;
+                    Swal.fire({
+                        title: "Welcome to OBSNEST Family",
+                        html: "You are the valuable one in OBSNEST World",
+                        timer: 2000,
+                        timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading();
+                            const timer = Swal.getPopup().querySelector("b");
+                            timerInterval = setInterval(() => {
+                                timer.textContent = `${Swal.getTimerLeft()}`;
+                            }, 100);
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval);
+                        }
+                    }).then((result) => {
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log("I was closed by the timer");
+                        }
+                    });
+
+                    //  Now navigate 
+                    navigate(home, { replace: true })
+                }
             })
     }
 

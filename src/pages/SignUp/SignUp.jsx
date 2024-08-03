@@ -22,11 +22,11 @@ const SignUp = () => {
 
         // SignUp mechanism
         createUser(email, password)
-            .then(result => {
-                const createdUser = result.user;
-                console.log(createdUser);
+            .then(() => {
+                // const createdUser = result.user;
+                // console.log(createdUser);
 
-                const savedUser = { name: name, email: email, password:password };
+                const savedUser = { name: name, email: email, password: password };
                 return fetch('https://obsnest-server.vercel.app/obsnestusers', {
                     method: "POST",
                     headers: {
@@ -37,7 +37,7 @@ const SignUp = () => {
             })
             .then(res => {
                 if (!res.ok) {
-                    return res.text().then(text => { throw new Error(text); });
+                    return res.text().then(text => { throw new Error(text) });
                 }
                 return res.json();
             })
