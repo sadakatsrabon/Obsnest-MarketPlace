@@ -5,10 +5,11 @@ import Login from '../pages/Login/Login';
 import SignUp from '../pages/SignUp/SignUp';
 import ProductDetails from '../pages/ProductDetails/ProductDetails';
 import DashboardLayout from '../Layout/DashboardLayout';
-import MyCart from '../pages/DashBoard/dashboardPage/MyCart';
+import MyCart from '../pages/DashBoard/MyCart';
 import LoginLayout from '../Layout/LoginLayout';
 import Product from '../pages/Product/Product';
 import ObsnestSecret from './ObsnestSecret';
+import AllUsers from '../pages/DashBoard/AllUsers';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'mycart',
         element: <MyCart></MyCart>
+      },
+      {
+        path: 'manageusers',
+        element: <AllUsers></AllUsers>
       }
     ]
   },

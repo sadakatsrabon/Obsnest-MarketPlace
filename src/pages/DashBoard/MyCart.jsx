@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import useCart from "../../../components/hooks/useCart";
+import useCart from "../../components/hooks/useCart";
 
 const MyCart = () => {
     const [cart, , refetch] = useCart();

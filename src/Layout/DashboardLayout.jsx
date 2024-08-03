@@ -2,6 +2,10 @@
 import { Link, Outlet } from 'react-router-dom';
 
 const DashboardLayout = () => {
+
+    // ToDo: Load Data from server to have dynamic isAdmin based on data;
+    const isAdmin = true;
+
     return (
         <div className="pt-20">
             {/* Drawer */}
@@ -17,14 +21,27 @@ const DashboardLayout = () => {
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                             {/* Sidebar content here */}
-                            <li><Link to="/">Home</Link></li>
-                            <div className="divider"></div>
-                            <li><Link>Admin Home</Link></li>
-                            <li><Link>User Home</Link></li>
-                            <li><Link to='mycart'>My Cart</Link></li>
-                            <li><Link>Payment History</Link></li>
-                            <div className="divider"></div>
-                            <li><Link>Menu</Link></li>
+                            {
+                                isAdmin ? <>
+                                    <li><Link to="/">Home</Link></li>
+                                    <div className="divider"></div>
+                                    <li><Link>Admin Home</Link></li>
+                                    <li><Link to="manageusers">Manage User</Link></li>
+                                    <li><Link>Manage Product</Link></li>
+                                    <li><Link>Payment History</Link></li>
+                                    <div className="divider"></div>
+                                    <li><Link>Menu</Link></li>
+                                </> : <>
+                                    <li><Link to="/">Home</Link></li>
+                                    <div className="divider"></div>
+                                    <li><Link>User Home</Link></li>
+                                    <li><Link to='mycart'>My Cart</Link></li>
+                                    <li><Link>Payment History</Link></li>
+                                    <div className="divider"></div>
+                                    <li><Link>Menu</Link></li>
+                                </>
+                            }
+
                         </ul>
                     </div>
                 </div>
